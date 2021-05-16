@@ -1,0 +1,6 @@
+|D_latch
+Qout <= Qout$latch.DB_MAX_OUTPUT_PORT_TYPE
+en => Qout$latch.LATCH_ENABLE
+Din => Qout$latch.DATAIN
+
+

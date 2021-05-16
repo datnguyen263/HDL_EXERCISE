@@ -1,0 +1,57 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder_main
+
+Top level modules:
+	decoder_main
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_latch
+
+Top level modules:
+	D_latch
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module word
+
+Top level modules:
+	word
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tristate
+
+Top level modules:
+	tristate
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/preSynthesis/SRAM_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/preSynthesis/SRAM_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM_tb
+
+Top level modules:
+	SRAM_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MemoryCell
+
+Top level modules:
+	MemoryCell
+
+} {} {}}

@@ -1,0 +1,38 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/word.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/word.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module word
+
+Top level modules:
+	word
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFile.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFileCell.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFileCell.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFileCell
+
+Top level modules:
+	RegisterFileCell
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/decoder5to32.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/decoder5to32.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder2to4
+-- Compiling module decoder3to8
+-- Compiling module decoder5to32
+
+Top level modules:
+	decoder5to32
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/D_ff.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/D_ff.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff
+
+Top level modules:
+	D_ff
+
+} {} {}}

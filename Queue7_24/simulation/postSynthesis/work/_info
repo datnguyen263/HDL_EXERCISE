@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vQueue7_24
+Z1 !s100 aokiTH8FM@3dY?TnozIHB0
+Z2 IHh4C2a]RIAnoMgI2`lmK31
+Z3 VbIQcIMNi60I>lQ=jcT3z22
+Z4 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\Queue7_24\simulation\postSynthesis
+Z5 w1603856752
+Z6 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24.vo
+Z7 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24.vo|
+Z10 o-work work -O0
+Z11 n@queue7_24
+!i10b 1
+!s85 0
+Z12 !s108 1604475192.634000
+Z13 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24.vo|
+!s101 -O0
+vQueue7_24_tb
+!i10b 1
+!s100 9U18YR439N;G<?XhlEfkS3
+IGgUa@@fIh0gkK4E2_o;G32
+V^OeaRkYL4hB<aMkQ=N2:F3
+R4
+w1604475189
+Z14 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24_tb.v
+Z15 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24_tb.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1604475194.831000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24_tb.v|
+Z16 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24_tb.v|
+!s101 -O0
+R10
+Z17 n@queue7_24_tb

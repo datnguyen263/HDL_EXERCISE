@@ -1,0 +1,84 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vD_ff
+Z1 I3[F3:BdBfKd8SS`^7hIQZ3
+Z2 VG=GZc5iO7ENZMEUI6T3Ua3
+Z3 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\ShifterWithParallelLoad\ModelSimSimulation
+Z4 w1601392007
+Z5 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v
+Z6 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@d_ff
+Z10 !s100 6YKNfm@ebYR1OnXH`E;2P2
+Z11 !s108 1601433153.116000
+Z12 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4_1
+Z14 I@_ClIc@PZ7fiQL5;`37YR3
+Z15 V9`AC:VFYmY?gQN<MlJ?BO0
+R3
+Z16 w1601390255
+Z17 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v
+Z18 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v
+L0 1
+R7
+r1
+31
+R8
+Z19 !s100 >aU<gGB^MJWNPOFo[0ZUF1
+Z20 !s108 1601433162.754000
+Z21 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v|
+Z22 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSRwPL
+Z23 !s100 iZ<1^DdYjB:RCb;gjn2gE2
+Z24 I9RDl_MZU7R@?;AbZ:]`6X3
+Z25 V5^Z]2`ZO6l7JT@WjZTH4:0
+R3
+Z26 w1601432857
+Z27 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/SRwPL.v
+Z28 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/SRwPL.v
+L0 7
+R7
+r1
+31
+Z29 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/SRwPL.v|
+R8
+Z30 n@s@rw@p@l
+Z31 !s108 1601433272.644000
+Z32 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/SRwPL.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSRwPL_tb
+!i10b 1
+!s100 FRcIK]R0<QL@DTX5O;4g=0
+IkhMi=ozgDo0;6DiVfgU5Q0
+Z33 Vi]1BhA;TTXSY3HCW9n_E^0
+R3
+w1601441869
+Z34 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/ModelSimSimulation/SRwPL_tb.v
+Z35 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/ModelSimSimulation/SRwPL_tb.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1601441874.089000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/ModelSimSimulation/SRwPL_tb.v|
+Z36 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/ModelSimSimulation/SRwPL_tb.v|
+!s101 -O0
+R8
+Z37 n@s@rw@p@l_tb

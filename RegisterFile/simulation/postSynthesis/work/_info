@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vRegisterFile
+Z1 !s100 91]NmWE6>C08b^[;Hdb=01
+Z2 IzSZYohTm5[:n7Uh];U;fR0
+Z3 VLc9Jke2<7f^FSH9Z<6Xl51
+Z4 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\RegisterFile\simulation\postSynthesis
+Z5 w1603124019
+Z6 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile.vo
+Z7 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile.vo|
+Z10 o-work work -O0
+Z11 n@register@file
+!i10b 1
+!s85 0
+Z12 !s108 1603265460.340000
+Z13 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile.vo|
+!s101 -O0
+vRegisterFile_tb
+!i10b 1
+!s100 ]mA_FX77F9nnjHSL9MG<d1
+Ib3Z:f]VWj5?TJ_2@1Wcd83
+Z14 V35Z>CP@?nD>ZT[V5_TbLd0
+R4
+w1603265454
+Z15 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v
+Z16 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1603265460.884000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v|
+Z17 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v|
+!s101 -O0
+R10
+Z18 n@register@file_tb

@@ -1,0 +1,15 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFile_tb
+
+Top level modules:
+	RegisterFile_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile.vo {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile.vo
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}}

@@ -1,0 +1,358 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vComparator
+Z1 I7nAjnD?VOPAnfESKzP9ei2
+Z2 V_`9h0QDR=722Oz11:z2ci2
+Z3 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\Queue7_24\simulation\preSynthesis
+Z4 w1603856205
+Z5 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Comparator.v
+Z6 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Comparator.v
+L0 4
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@comparator
+Z10 !s100 Y2QimIONOTCEfon>8hc[D0
+Z11 !s108 1604412709.908000
+Z12 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Comparator.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Comparator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vCounter
+Z14 I@C_mZXEY29Tl9l1ib;`2d0
+Z15 V42856j<8EJ[69[9SX6dhX3
+R3
+Z16 w1603856225
+Z17 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Counter.v
+Z18 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Counter.v
+L0 8
+R7
+r1
+31
+R8
+Z19 n@counter
+Z20 !s100 ;Tk;gWn?1Z>m[2mGLKi1J2
+Z21 !s108 1604412710.436000
+Z22 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Counter.v|
+Z23 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vD_ff
+Z24 IT0gZcPm>eT8g5P1PoMMmN3
+Z25 VG=GZc5iO7ENZMEUI6T3Ua3
+R3
+Z26 w1601392007
+Z27 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Components/SiquentialCircuit/D_ff.v
+Z28 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Components/SiquentialCircuit/D_ff.v
+L0 1
+R7
+r1
+31
+R8
+Z29 n@d_ff
+Z30 !s100 9`FEJQFk5RG_5BOjDjYnQ2
+Z31 !s108 1604412712.729000
+Z32 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Components/SiquentialCircuit/D_ff.v|
+Z33 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Components/SiquentialCircuit/D_ff.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vD_latch
+Z34 IifZ6F`WJ_`[`[[^^LcC4=0
+Z35 VHg<jCXIf9mL<DH1VAK6?h0
+R3
+Z36 w1603207304
+Z37 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v
+Z38 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v
+L0 14
+R7
+r1
+31
+R8
+Z39 n@d_latch
+Z40 !s100 RKnSUTG?_fgHfW2d?i>Dl1
+Z41 !s108 1604412713.492000
+Z42 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v|
+Z43 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder
+Z44 ImXPm]11RhdlZ?OSP9PX<^3
+Z45 VcjVQMY2UIaXHYaF3cmW<?3
+R3
+Z46 w1603186405
+Z47 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v
+Z48 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v
+L0 2
+R7
+r1
+31
+R8
+Z49 !s100 hLKCGUoT]1PgFX[dFEPHP0
+Z50 !s108 1604412713.803000
+Z51 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v|
+Z52 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder_main
+Z53 II6>G48:o[WAe2d1FdJ`PA1
+Z54 ViP8>X2^BNTiLKb]h90TD@2
+R3
+Z55 w1603186425
+Z56 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v
+Z57 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v
+L0 1
+R7
+r1
+31
+R8
+Z58 !s100 2G?9VDB98K]TRT1d?17Gb2
+Z59 !s108 1604412714.156000
+Z60 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v|
+Z61 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFAS
+Z62 If91TGX?i60;zZ5n7NAIT01
+Z63 VF9On37QGQ?Li=0_@ILn1b3
+R3
+Z64 w1603856243
+Z65 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FAS.v
+Z66 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FAS.v
+L0 4
+R7
+r1
+31
+Z67 !s108 1604412710.810000
+Z68 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FAS.v|
+Z69 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FAS.v|
+R8
+Z70 n@f@a@s
+Z71 !s100 oCalkTF1Y[<5dK9SiR4[=0
+!i10b 1
+!s85 0
+!s101 -O0
+vFullAdder
+Z72 I[o`klY7;SSNM[S>[endc_1
+Z73 V8FHVhh[jSB@8HgTfB]FXA3
+R3
+Z74 w1603856258
+Z75 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FullAdder.v
+Z76 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FullAdder.v
+L0 1
+R7
+r1
+31
+R8
+Z77 n@full@adder
+Z78 !s100 4AHfT_jTN7K63;[<iDVUI2
+Z79 !s108 1604412711.411000
+Z80 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FullAdder.v|
+Z81 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FullAdder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vHAS
+Z82 IDnE]<<_oIO6V1EHz2WJ>G1
+Z83 V0R]AbA_Pd4Rf6fbbc>blm2
+R3
+Z84 w1601476788
+Z85 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
+Z86 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
+L0 4
+R7
+r1
+31
+R8
+Z87 n@h@a@s
+Z88 !s100 B7j7BHZdClGQf5=Vb03;F1
+Z89 !s108 1604412713.095000
+Z90 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v|
+Z91 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMemoryCell
+Z92 IFd:4dJPFR]g`E6S431N@F0
+Z93 VAj8ZNk0In5O5C^LEU3Q:R2
+R3
+Z94 w1603186442
+Z95 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v
+Z96 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v
+L0 1
+R7
+r1
+31
+R8
+Z97 n@memory@cell
+Z98 !s100 BW[JRK1DZW:Mk<B51FjWl1
+Z99 !s108 1604412714.537000
+Z100 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v|
+Z101 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2_1
+Z102 Ica0ga]8[@o@2LUVOWY;RO1
+Z103 VU`Tb<KX1`VHimlL=N[QA;3
+R3
+Z104 w1603856274
+Z105 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/mux2_1.v
+Z106 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/mux2_1.v
+L0 5
+R7
+r1
+31
+R8
+Z107 !s100 7[]DdQkI@TB4R4FILF_`J3
+Z108 !s108 1604412711.709000
+Z109 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/mux2_1.v|
+Z110 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/mux2_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vQueue7_24
+Z111 I9[MNE<DUk2nbIGaeMHVgY1
+Z112 V9gRGjl`IRZ^2][EA3ZGb43
+R3
+Z113 w1603856291
+Z114 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Queue7_24.v
+Z115 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Queue7_24.v
+L0 4
+R7
+r1
+31
+R8
+Z116 n@queue7_24
+Z117 !s100 C[Cb?K[BZaOo?<icn2N3=3
+Z118 !s108 1604412712.070000
+Z119 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Queue7_24.v|
+Z120 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Queue7_24.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vQueue7_24_tb
+!i10b 1
+!s100 Ujjm<YdIl_M5DC_]^P4:Q1
+INC8?h:SRJ16`dRjL61_D?1
+VagVC]1ZfWHA?O;ehT0jbH1
+R3
+w1604412676
+8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/preSynthesis/Queue7_24_tb.v
+FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/preSynthesis/Queue7_24_tb.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1604412716.029000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/preSynthesis/Queue7_24_tb.v|
+!s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/preSynthesis/Queue7_24_tb.v|
+!s101 -O0
+R8
+n@queue7_24_tb
+vselector
+Z121 IXCeOJ1dP`UNoHikM:N2WQ0
+Z122 VRk:PD=;XPQVDU8YzD6XAZ2
+R3
+Z123 w1603856311
+Z124 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/selector.v
+Z125 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/selector.v
+L0 1
+R7
+r1
+31
+R8
+Z126 !s100 jQ8T9jU@XJ<78_5E30E^S3
+Z127 !s108 1604412712.394000
+Z128 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/selector.v|
+Z129 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/selector.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vSRAM
+Z130 I4MC2HQl7a1:P:;^JhA6mY3
+Z131 V?mC4nR0]f0Oc<OGV;f;193
+R3
+Z132 w1603189379
+Z133 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v
+Z134 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v
+L0 4
+R7
+r1
+31
+R8
+Z135 n@s@r@a@m
+Z136 !s100 6S6UdNg4:0l;6H<zT8OLC2
+Z137 !s108 1604412714.902000
+Z138 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v|
+Z139 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vtristate
+Z140 IDoiL;HOm8C<kkao_JYB;J3
+Z141 V5iFh72iK?60fR0U]mY_Mh3
+R3
+Z142 w1603186478
+Z143 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v
+Z144 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v
+L0 1
+R7
+r1
+31
+R8
+Z145 !s100 R`_Lm<ELM_Vh0XiWXkzjA3
+Z146 !s108 1604412715.322000
+Z147 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v|
+Z148 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vword
+Z149 IzECMXcYmNgS^Ld[nAB=eO2
+Z150 V_][0d4bh[DW1I:68=AbaE3
+R3
+Z151 w1603186490
+Z152 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v
+Z153 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v
+L0 1
+R7
+r1
+31
+R8
+!i10b 1
+Z154 !s100 fZmP;`WSR=7b24JTIT9_73
+!s85 0
+Z155 !s108 1604412715.685000
+Z156 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v|
+Z157 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v|
+!s101 -O0
+vxor_gate
+Z158 Inz_XImM[DF>;KY5N=O39l3
+Z159 VzEb_WD0bLGf1]>l]nAPH:3
+R3
+R64
+R65
+R66
+L0 22
+R7
+r1
+31
+R67
+R68
+R69
+R8
+Z160 !s100 QSOc7JN@ag2oUmD:@kALo2
+!i10b 1
+!s85 0
+!s101 -O0

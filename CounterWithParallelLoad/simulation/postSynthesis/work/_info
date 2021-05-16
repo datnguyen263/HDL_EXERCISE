@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vCounterWithParallelLoad
+Z1 !s100 ahnELNahGO<;WzdPW8l=E0
+Z2 IgM@N_[h:Bh6LkdFSPLkM73
+Z3 VACLILoDJ_j^EGU2B<;SL?3
+Z4 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis
+Z5 w1604464818
+Z6 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo
+Z7 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo|
+Z10 o-work work -O0
+Z11 n@counter@with@parallel@load
+!i10b 1
+!s85 0
+Z12 !s108 1604466448.804000
+Z13 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo|
+!s101 -O0
+vCounterWithParallelLoad_tb
+!i10b 1
+!s100 >N[VMT1hR0IH:nQVl3ezo0
+IKd@c[`nZgWbB6mW?Ka8UE3
+Z14 VBb_?dIz]jc[z1M5SDFlKN1
+R4
+w1604466443
+Z15 8E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v
+Z16 FE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1604466449.153000
+!s107 E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v|
+Z17 !s90 -reportprogress|300|-work|work|E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v|
+!s101 -O0
+R10
+Z18 n@counter@with@parallel@load_tb

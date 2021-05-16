@@ -1,0 +1,2070 @@
+TimeQuest Timing Analyzer report for Stack7_20
+Wed Nov 04 09:49:26 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Recovery: 'clk'
+ 12. Slow Model Removal: 'clk'
+ 13. Slow Model Minimum Pulse Width: 'clk'
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Recovery: 'clk'
+ 24. Fast Model Removal: 'clk'
+ 25. Fast Model Minimum Pulse Width: 'clk'
+ 26. Clock to Output Times
+ 27. Minimum Clock to Output Times
+ 28. Propagation Delay
+ 29. Minimum Propagation Delay
+ 30. Multicorner Timing Analysis Summary
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Recovery Transfers
+ 36. Removal Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Stack7_20                                                         ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
++--------------------------------+
+; Slow Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -8.259 ; -63.000       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.561 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -1.380                ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'clk'                                                                                                                                                           ;
++--------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -8.259 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.721      ; 10.293     ;
+; -8.119 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.717      ; 9.727      ;
+; -8.082 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.741      ; 9.909      ;
+; -8.004 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.715      ; 9.844      ;
+; -7.893 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.727      ; 9.716      ;
+; -7.759 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.721      ; 10.293     ;
+; -7.749 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 0.500        ; 2.725      ; 9.568      ;
+; -7.619 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.717      ; 9.727      ;
+; -7.582 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.741      ; 9.909      ;
+; -7.504 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.715      ; 9.844      ;
+; -7.477 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.713      ; 9.540      ;
+; -7.417 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 2.737      ; 9.462      ;
+; -7.393 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.727      ; 9.716      ;
+; -7.249 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 1.000        ; 2.725      ; 9.568      ;
+; -6.977 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.713      ; 9.540      ;
+; -6.917 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 2.737      ; 9.462      ;
+; -2.948 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.761      ;
+; -2.899 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.485      ;
+; -2.791 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.182      ;
+; -2.708 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.333      ;
+; -2.585 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.181      ;
+; -2.451 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.045      ;
+; -2.234 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.042      ;
+; -2.181 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 2.031      ;
++--------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'clk'                                                                                                                                                           ;
++-------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.561 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 0.000        ; 2.725      ; 3.286      ;
+; 0.929 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.713      ; 3.642      ;
+; 0.938 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.737      ; 3.675      ;
+; 0.963 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.727      ; 3.690      ;
+; 0.973 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.741      ; 3.714      ;
+; 0.992 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.717      ; 3.709      ;
+; 1.061 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; -0.500       ; 2.725      ; 3.286      ;
+; 1.093 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.721      ; 3.814      ;
+; 1.218 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 2.715      ; 3.933      ;
+; 1.429 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.713      ; 3.642      ;
+; 1.438 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.737      ; 3.675      ;
+; 1.463 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.727      ; 3.690      ;
+; 1.473 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.741      ; 3.714      ;
+; 1.485 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.485      ;
+; 1.492 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.717      ; 3.709      ;
+; 1.497 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.497      ;
+; 1.499 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.499      ;
+; 1.505 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.505      ;
+; 1.511 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.511      ;
+; 1.524 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.524      ;
+; 1.529 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.529      ;
+; 1.545 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 1.545      ;
+; 1.593 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.721      ; 3.814      ;
+; 1.718 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 2.715      ; 3.933      ;
++-------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                            ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[0]|D[0]|nand3~2|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[0]|D[0]|nand3~2|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[1]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[1]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[2]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[2]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[3]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[3]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[4]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[4]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[5]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[5]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[6]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[6]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[7]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[7]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                                ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; OUT[*]      ; clk        ; 12.935 ; 12.935 ; Rise       ; clk             ;
+;  OUT[0]     ; clk        ; 12.381 ; 12.381 ; Rise       ; clk             ;
+;  OUT[1]     ; clk        ; 12.935 ; 12.935 ; Rise       ; clk             ;
+;  OUT[2]     ; clk        ; 12.887 ; 12.887 ; Rise       ; clk             ;
+;  OUT[3]     ; clk        ; 12.309 ; 12.309 ; Rise       ; clk             ;
+;  OUT[4]     ; clk        ; 12.235 ; 12.235 ; Rise       ; clk             ;
+;  OUT[5]     ; clk        ; 12.750 ; 12.750 ; Rise       ; clk             ;
+;  OUT[6]     ; clk        ; 12.064 ; 12.064 ; Rise       ; clk             ;
+;  OUT[7]     ; clk        ; 12.198 ; 12.198 ; Rise       ; clk             ;
+; counter[*]  ; clk        ; 13.728 ; 13.728 ; Rise       ; clk             ;
+;  counter[0] ; clk        ; 8.302  ; 8.302  ; Rise       ; clk             ;
+;  counter[1] ; clk        ; 7.182  ; 7.182  ; Rise       ; clk             ;
+;  counter[2] ; clk        ; 13.485 ; 13.485 ; Rise       ; clk             ;
+;  counter[3] ; clk        ; 8.025  ; 8.025  ; Rise       ; clk             ;
+;  counter[4] ; clk        ; 13.728 ; 13.728 ; Rise       ; clk             ;
+;  counter[5] ; clk        ; 9.066  ; 9.066  ; Rise       ; clk             ;
+;  counter[6] ; clk        ; 7.453  ; 7.453  ; Rise       ; clk             ;
+;  counter[7] ; clk        ; 7.571  ; 7.571  ; Rise       ; clk             ;
+; empty       ; clk        ; 9.838  ; 9.838  ; Rise       ; clk             ;
+; full        ; clk        ; 8.223  ; 8.223  ; Rise       ; clk             ;
+; OUT[*]      ; clk        ; 12.935 ; 12.935 ; Fall       ; clk             ;
+;  OUT[0]     ; clk        ; 12.381 ; 12.381 ; Fall       ; clk             ;
+;  OUT[1]     ; clk        ; 12.935 ; 12.935 ; Fall       ; clk             ;
+;  OUT[2]     ; clk        ; 12.887 ; 12.887 ; Fall       ; clk             ;
+;  OUT[3]     ; clk        ; 12.309 ; 12.309 ; Fall       ; clk             ;
+;  OUT[4]     ; clk        ; 12.235 ; 12.235 ; Fall       ; clk             ;
+;  OUT[5]     ; clk        ; 12.750 ; 12.750 ; Fall       ; clk             ;
+;  OUT[6]     ; clk        ; 12.064 ; 12.064 ; Fall       ; clk             ;
+;  OUT[7]     ; clk        ; 12.198 ; 12.198 ; Fall       ; clk             ;
+; counter[*]  ; clk        ; 13.728 ; 13.728 ; Fall       ; clk             ;
+;  counter[0] ; clk        ; 8.302  ; 8.302  ; Fall       ; clk             ;
+;  counter[1] ; clk        ; 7.182  ; 7.182  ; Fall       ; clk             ;
+;  counter[2] ; clk        ; 13.485 ; 13.485 ; Fall       ; clk             ;
+;  counter[3] ; clk        ; 8.025  ; 8.025  ; Fall       ; clk             ;
+;  counter[4] ; clk        ; 13.728 ; 13.728 ; Fall       ; clk             ;
+;  counter[5] ; clk        ; 9.066  ; 9.066  ; Fall       ; clk             ;
+;  counter[6] ; clk        ; 7.453  ; 7.453  ; Fall       ; clk             ;
+;  counter[7] ; clk        ; 7.571  ; 7.571  ; Fall       ; clk             ;
+; empty       ; clk        ; 9.838  ; 9.838  ; Fall       ; clk             ;
+; full        ; clk        ; 8.223  ; 8.223  ; Fall       ; clk             ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; OUT[*]      ; clk        ; 6.048 ; 6.048 ; Rise       ; clk             ;
+;  OUT[0]     ; clk        ; 6.048 ; 6.048 ; Rise       ; clk             ;
+;  OUT[1]     ; clk        ; 6.121 ; 6.121 ; Rise       ; clk             ;
+;  OUT[2]     ; clk        ; 6.402 ; 6.402 ; Rise       ; clk             ;
+;  OUT[3]     ; clk        ; 6.104 ; 6.104 ; Rise       ; clk             ;
+;  OUT[4]     ; clk        ; 6.209 ; 6.209 ; Rise       ; clk             ;
+;  OUT[5]     ; clk        ; 6.280 ; 6.280 ; Rise       ; clk             ;
+;  OUT[6]     ; clk        ; 6.135 ; 6.135 ; Rise       ; clk             ;
+;  OUT[7]     ; clk        ; 6.214 ; 6.214 ; Rise       ; clk             ;
+; counter[*]  ; clk        ; 5.007 ; 5.007 ; Rise       ; clk             ;
+;  counter[0] ; clk        ; 6.248 ; 6.248 ; Rise       ; clk             ;
+;  counter[1] ; clk        ; 5.012 ; 5.012 ; Rise       ; clk             ;
+;  counter[2] ; clk        ; 5.007 ; 5.007 ; Rise       ; clk             ;
+;  counter[3] ; clk        ; 5.911 ; 5.911 ; Rise       ; clk             ;
+;  counter[4] ; clk        ; 5.780 ; 5.780 ; Rise       ; clk             ;
+;  counter[5] ; clk        ; 6.042 ; 6.042 ; Rise       ; clk             ;
+;  counter[6] ; clk        ; 5.027 ; 5.027 ; Rise       ; clk             ;
+;  counter[7] ; clk        ; 5.380 ; 5.380 ; Rise       ; clk             ;
+; empty       ; clk        ; 7.052 ; 7.052 ; Rise       ; clk             ;
+; full        ; clk        ; 6.092 ; 6.092 ; Rise       ; clk             ;
+; OUT[*]      ; clk        ; 6.048 ; 6.048 ; Fall       ; clk             ;
+;  OUT[0]     ; clk        ; 6.048 ; 6.048 ; Fall       ; clk             ;
+;  OUT[1]     ; clk        ; 6.121 ; 6.121 ; Fall       ; clk             ;
+;  OUT[2]     ; clk        ; 6.402 ; 6.402 ; Fall       ; clk             ;
+;  OUT[3]     ; clk        ; 6.104 ; 6.104 ; Fall       ; clk             ;
+;  OUT[4]     ; clk        ; 6.209 ; 6.209 ; Fall       ; clk             ;
+;  OUT[5]     ; clk        ; 6.280 ; 6.280 ; Fall       ; clk             ;
+;  OUT[6]     ; clk        ; 6.135 ; 6.135 ; Fall       ; clk             ;
+;  OUT[7]     ; clk        ; 6.214 ; 6.214 ; Fall       ; clk             ;
+; counter[*]  ; clk        ; 5.007 ; 5.007 ; Fall       ; clk             ;
+;  counter[0] ; clk        ; 6.248 ; 6.248 ; Fall       ; clk             ;
+;  counter[1] ; clk        ; 5.012 ; 5.012 ; Fall       ; clk             ;
+;  counter[2] ; clk        ; 5.007 ; 5.007 ; Fall       ; clk             ;
+;  counter[3] ; clk        ; 5.911 ; 5.911 ; Fall       ; clk             ;
+;  counter[4] ; clk        ; 5.780 ; 5.780 ; Fall       ; clk             ;
+;  counter[5] ; clk        ; 6.042 ; 6.042 ; Fall       ; clk             ;
+;  counter[6] ; clk        ; 5.027 ; 5.027 ; Fall       ; clk             ;
+;  counter[7] ; clk        ; 5.380 ; 5.380 ; Fall       ; clk             ;
+; empty       ; clk        ; 7.052 ; 7.052 ; Fall       ; clk             ;
+; full        ; clk        ; 6.092 ; 6.092 ; Fall       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; En         ; OUT[0]      ; 13.898 ; 13.474 ; 13.474 ; 13.898 ;
+; En         ; OUT[1]      ; 14.452 ; 13.801 ; 13.801 ; 14.452 ;
+; En         ; OUT[2]      ; 14.404 ; 13.752 ; 13.752 ; 14.404 ;
+; En         ; OUT[3]      ; 13.826 ; 13.152 ; 13.152 ; 13.826 ;
+; En         ; OUT[4]      ; 13.752 ; 13.338 ; 13.338 ; 13.752 ;
+; En         ; OUT[5]      ; 14.267 ; 13.601 ; 13.601 ; 14.267 ;
+; En         ; OUT[6]      ; 13.581 ; 13.180 ; 13.180 ; 13.581 ;
+; En         ; OUT[7]      ; 13.715 ; 13.522 ; 13.522 ; 13.715 ;
+; En         ; counter[0]  ;        ; 10.447 ; 10.447 ;        ;
+; En         ; counter[1]  ; 9.269  ; 9.269  ; 9.269  ; 9.269  ;
+; En         ; counter[2]  ; 15.572 ; 15.572 ; 15.572 ; 15.572 ;
+; En         ; counter[3]  ; 10.112 ; 10.112 ; 10.112 ; 10.112 ;
+; En         ; counter[4]  ; 15.815 ; 15.815 ; 15.815 ; 15.815 ;
+; En         ; counter[5]  ; 11.153 ; 11.153 ; 11.153 ; 11.153 ;
+; En         ; counter[6]  ; 9.540  ; 9.540  ; 9.540  ; 9.540  ;
+; En         ; counter[7]  ; 9.658  ; 9.658  ; 9.658  ; 9.658  ;
+; En         ; empty       ; 11.983 ; 11.253 ; 11.253 ; 11.983 ;
+; En         ; full        ; 10.310 ; 10.310 ; 10.310 ; 10.310 ;
+; IN[0]      ; OUT[0]      ; 9.492  ;        ;        ; 9.492  ;
+; IN[1]      ; OUT[1]      ; 10.376 ;        ;        ; 10.376 ;
+; IN[2]      ; OUT[2]      ; 10.866 ;        ;        ; 10.866 ;
+; IN[3]      ; OUT[3]      ; 9.691  ;        ;        ; 9.691  ;
+; IN[4]      ; OUT[4]      ; 9.565  ;        ;        ; 9.565  ;
+; IN[5]      ; OUT[5]      ; 10.387 ;        ;        ; 10.387 ;
+; IN[6]      ; OUT[6]      ; 9.417  ;        ;        ; 9.417  ;
+; IN[7]      ; OUT[7]      ; 9.544  ;        ;        ; 9.544  ;
+; PushPop    ; OUT[0]      ; 16.782 ; 16.358 ; 16.358 ; 16.782 ;
+; PushPop    ; OUT[1]      ; 17.336 ; 16.685 ; 16.685 ; 17.336 ;
+; PushPop    ; OUT[2]      ; 17.288 ; 16.636 ; 16.636 ; 17.288 ;
+; PushPop    ; OUT[3]      ; 16.710 ; 16.036 ; 16.036 ; 16.710 ;
+; PushPop    ; OUT[4]      ; 16.636 ; 16.222 ; 16.222 ; 16.636 ;
+; PushPop    ; OUT[5]      ; 17.151 ; 16.485 ; 16.485 ; 17.151 ;
+; PushPop    ; OUT[6]      ; 16.465 ; 16.064 ; 16.064 ; 16.465 ;
+; PushPop    ; OUT[7]      ; 16.599 ; 16.406 ; 16.406 ; 16.599 ;
+; PushPop    ; counter[0]  ;        ; 13.331 ; 13.331 ;        ;
+; PushPop    ; counter[1]  ; 12.153 ; 12.153 ; 12.153 ; 12.153 ;
+; PushPop    ; counter[2]  ; 18.456 ; 18.456 ; 18.456 ; 18.456 ;
+; PushPop    ; counter[3]  ; 12.996 ; 12.996 ; 12.996 ; 12.996 ;
+; PushPop    ; counter[4]  ; 18.699 ; 18.699 ; 18.699 ; 18.699 ;
+; PushPop    ; counter[5]  ; 14.037 ; 14.037 ; 14.037 ; 14.037 ;
+; PushPop    ; counter[6]  ; 12.424 ; 12.424 ; 12.424 ; 12.424 ;
+; PushPop    ; counter[7]  ; 12.542 ; 12.542 ; 12.542 ; 12.542 ;
+; PushPop    ; empty       ; 14.867 ; 14.137 ; 14.137 ; 14.867 ;
+; PushPop    ; full        ; 13.194 ; 13.194 ; 13.194 ; 13.194 ;
+; reset      ; OUT[0]      ; 13.918 ; 14.342 ; 14.342 ; 13.918 ;
+; reset      ; OUT[1]      ; 14.245 ; 14.896 ; 14.896 ; 14.245 ;
+; reset      ; OUT[2]      ; 14.196 ; 14.848 ; 14.848 ; 14.196 ;
+; reset      ; OUT[3]      ; 13.596 ; 14.270 ; 14.270 ; 13.596 ;
+; reset      ; OUT[4]      ; 13.782 ; 14.196 ; 14.196 ; 13.782 ;
+; reset      ; OUT[5]      ; 14.045 ; 14.711 ; 14.711 ; 14.045 ;
+; reset      ; OUT[6]      ; 13.624 ; 14.025 ; 14.025 ; 13.624 ;
+; reset      ; OUT[7]      ; 13.966 ; 14.159 ; 14.159 ; 13.966 ;
+; reset      ; counter[0]  ; 10.891 ; 9.462  ; 9.462  ; 10.891 ;
+; reset      ; counter[1]  ; 9.713  ; 9.713  ; 9.713  ; 9.713  ;
+; reset      ; counter[2]  ; 16.016 ; 16.016 ; 16.016 ; 16.016 ;
+; reset      ; counter[3]  ; 10.556 ; 10.556 ; 10.556 ; 10.556 ;
+; reset      ; counter[4]  ; 16.259 ; 16.259 ; 16.259 ; 16.259 ;
+; reset      ; counter[5]  ; 11.597 ; 11.597 ; 11.597 ; 11.597 ;
+; reset      ; counter[6]  ; 9.984  ; 9.984  ; 9.984  ; 9.984  ;
+; reset      ; counter[7]  ; 10.102 ; 10.102 ; 10.102 ; 10.102 ;
+; reset      ; empty       ; 11.697 ; 12.427 ; 12.427 ; 11.697 ;
+; reset      ; full        ; 10.754 ; 10.754 ; 10.754 ; 10.754 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; En         ; OUT[0]      ; 7.683  ; 8.127  ; 8.127  ; 7.683  ;
+; En         ; OUT[1]      ; 8.345  ; 8.800  ; 8.800  ; 8.345  ;
+; En         ; OUT[2]      ; 8.535  ; 8.978  ; 8.978  ; 8.535  ;
+; En         ; OUT[3]      ; 7.830  ; 8.314  ; 8.314  ; 7.830  ;
+; En         ; OUT[4]      ; 8.056  ; 8.214  ; 8.214  ; 8.056  ;
+; En         ; OUT[5]      ; 8.274  ; 8.724  ; 8.724  ; 8.274  ;
+; En         ; OUT[6]      ; 7.833  ; 8.298  ; 8.298  ; 7.833  ;
+; En         ; OUT[7]      ; 8.027  ; 8.202  ; 8.202  ; 8.027  ;
+; En         ; counter[0]  ;        ; 9.258  ; 9.258  ;        ;
+; En         ; counter[1]  ; 8.080  ; 8.080  ; 8.080  ; 8.080  ;
+; En         ; counter[2]  ; 14.383 ; 14.383 ; 14.383 ; 14.383 ;
+; En         ; counter[3]  ; 8.923  ; 8.923  ; 8.923  ; 8.923  ;
+; En         ; counter[4]  ; 14.626 ; 14.626 ; 14.626 ; 14.626 ;
+; En         ; counter[5]  ; 9.964  ; 9.964  ; 9.964  ; 9.964  ;
+; En         ; counter[6]  ; 8.351  ; 8.351  ; 8.351  ; 8.351  ;
+; En         ; counter[7]  ; 8.469  ; 8.469  ; 8.469  ; 8.469  ;
+; En         ; empty       ; 9.510  ; 10.064 ; 10.064 ; 9.510  ;
+; En         ; full        ; 8.786  ; 9.121  ; 9.121  ; 8.786  ;
+; IN[0]      ; OUT[0]      ; 9.492  ;        ;        ; 9.492  ;
+; IN[1]      ; OUT[1]      ; 10.376 ;        ;        ; 10.376 ;
+; IN[2]      ; OUT[2]      ; 10.866 ;        ;        ; 10.866 ;
+; IN[3]      ; OUT[3]      ; 9.691  ;        ;        ; 9.691  ;
+; IN[4]      ; OUT[4]      ; 9.565  ;        ;        ; 9.565  ;
+; IN[5]      ; OUT[5]      ; 10.387 ;        ;        ; 10.387 ;
+; IN[6]      ; OUT[6]      ; 9.417  ;        ;        ; 9.417  ;
+; IN[7]      ; OUT[7]      ; 9.544  ;        ;        ; 9.544  ;
+; PushPop    ; OUT[0]      ; 11.249 ; 10.805 ; 10.805 ; 11.249 ;
+; PushPop    ; OUT[1]      ; 11.922 ; 11.467 ; 11.467 ; 11.922 ;
+; PushPop    ; OUT[2]      ; 12.100 ; 11.657 ; 11.657 ; 12.100 ;
+; PushPop    ; OUT[3]      ; 11.436 ; 10.952 ; 10.952 ; 11.436 ;
+; PushPop    ; OUT[4]      ; 11.336 ; 11.178 ; 11.178 ; 11.336 ;
+; PushPop    ; OUT[5]      ; 11.846 ; 11.396 ; 11.396 ; 11.846 ;
+; PushPop    ; OUT[6]      ; 11.420 ; 10.955 ; 10.955 ; 11.420 ;
+; PushPop    ; OUT[7]      ; 11.324 ; 11.149 ; 11.149 ; 11.324 ;
+; PushPop    ; counter[0]  ;        ; 12.021 ; 12.021 ;        ;
+; PushPop    ; counter[1]  ; 10.843 ; 10.843 ; 10.843 ; 10.843 ;
+; PushPop    ; counter[2]  ; 17.146 ; 17.146 ; 17.146 ; 17.146 ;
+; PushPop    ; counter[3]  ; 11.686 ; 11.686 ; 11.686 ; 11.686 ;
+; PushPop    ; counter[4]  ; 17.389 ; 17.389 ; 17.389 ; 17.389 ;
+; PushPop    ; counter[5]  ; 12.727 ; 12.727 ; 12.727 ; 12.727 ;
+; PushPop    ; counter[6]  ; 11.114 ; 11.114 ; 11.114 ; 11.114 ;
+; PushPop    ; counter[7]  ; 11.232 ; 11.232 ; 11.232 ; 11.232 ;
+; PushPop    ; empty       ; 12.273 ; 12.827 ; 12.827 ; 12.273 ;
+; PushPop    ; full        ; 11.549 ; 11.884 ; 11.884 ; 11.549 ;
+; reset      ; OUT[0]      ; 8.714  ; 9.158  ; 9.158  ; 8.714  ;
+; reset      ; OUT[1]      ; 9.376  ; 9.831  ; 9.831  ; 9.376  ;
+; reset      ; OUT[2]      ; 9.566  ; 10.009 ; 10.009 ; 9.566  ;
+; reset      ; OUT[3]      ; 8.861  ; 9.345  ; 9.345  ; 8.861  ;
+; reset      ; OUT[4]      ; 9.087  ; 9.245  ; 9.245  ; 9.087  ;
+; reset      ; OUT[5]      ; 9.305  ; 9.755  ; 9.755  ; 9.305  ;
+; reset      ; OUT[6]      ; 8.864  ; 9.329  ; 9.329  ; 8.864  ;
+; reset      ; OUT[7]      ; 9.058  ; 9.233  ; 9.233  ; 9.058  ;
+; reset      ; counter[0]  ; 10.125 ; 9.435  ; 9.435  ; 10.125 ;
+; reset      ; counter[1]  ; 8.257  ; 8.257  ; 8.257  ; 8.257  ;
+; reset      ; counter[2]  ; 14.560 ; 14.560 ; 14.560 ; 14.560 ;
+; reset      ; counter[3]  ; 9.100  ; 9.100  ; 9.100  ; 9.100  ;
+; reset      ; counter[4]  ; 14.803 ; 14.803 ; 14.803 ; 14.803 ;
+; reset      ; counter[5]  ; 10.141 ; 10.141 ; 10.141 ; 10.141 ;
+; reset      ; counter[6]  ; 8.528  ; 8.528  ; 8.528  ; 8.528  ;
+; reset      ; counter[7]  ; 8.646  ; 8.646  ; 8.646  ; 8.646  ;
+; reset      ; empty       ; 9.687  ; 10.241 ; 10.241 ; 9.687  ;
+; reset      ; full        ; 8.963  ; 9.298  ; 9.298  ; 8.963  ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
++--------------------------------+
+; Fast Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -3.314 ; -25.254       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.031 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -1.380                ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'clk'                                                                                                                                                           ;
++--------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                         ; To Node                                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.314 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.576      ; 4.887      ;
+; -3.272 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.568      ; 4.657      ;
+; -3.235 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.593      ; 4.726      ;
+; -3.234 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.569      ; 4.705      ;
+; -3.163 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.577      ; 4.645      ;
+; -3.107 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 0.500        ; 1.575      ; 4.585      ;
+; -2.991 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.566      ; 4.571      ;
+; -2.938 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.500        ; 1.591      ; 4.522      ;
+; -2.814 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.576      ; 4.887      ;
+; -2.772 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.568      ; 4.657      ;
+; -2.735 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.593      ; 4.726      ;
+; -2.734 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.569      ; 4.705      ;
+; -2.663 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.577      ; 4.645      ;
+; -2.607 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 1.000        ; 1.575      ; 4.585      ;
+; -2.491 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.566      ; 4.571      ;
+; -2.438 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 1.591      ; 4.522      ;
+; -0.665 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.162      ;
+; -0.660 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 1.058      ;
+; -0.598 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.915      ;
+; -0.587 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.989      ;
+; -0.502 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.907      ;
+; -0.454 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.857      ;
+; -0.366 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.859      ;
+; -0.339 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 1.000        ; 0.000      ; 0.853      ;
++--------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'clk'                                                                                                                                                           ;
++-------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                         ; To Node                                           ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.031 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 0.000        ; 1.575      ; 1.606      ;
+; 0.174 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.593      ; 1.767      ;
+; 0.186 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.591      ; 1.777      ;
+; 0.212 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.577      ; 1.789      ;
+; 0.227 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.566      ; 1.793      ;
+; 0.235 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.568      ; 1.803      ;
+; 0.282 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.576      ; 1.858      ;
+; 0.366 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 1.569      ; 1.935      ;
+; 0.531 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; -0.500       ; 1.575      ; 1.606      ;
+; 0.622 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.622      ;
+; 0.627 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.627      ;
+; 0.629 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.629      ;
+; 0.631 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.631      ;
+; 0.634 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.634      ;
+; 0.638 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.638      ;
+; 0.639 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.639      ;
+; 0.648 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.648      ;
+; 0.674 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.593      ; 1.767      ;
+; 0.686 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.591      ; 1.777      ;
+; 0.712 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.577      ; 1.789      ;
+; 0.727 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.566      ; 1.793      ;
+; 0.735 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.568      ; 1.803      ;
+; 0.782 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.576      ; 1.858      ;
+; 0.866 ; clk                                               ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ; clk          ; clk         ; -0.500       ; 1.569      ; 1.935      ;
++-------+---------------------------------------------------+---------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                                              ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                            ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                                               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[0]|D_ff:D[0]|nand3~2 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[1]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[2]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[3]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[4]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[5]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[6]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack:SRwPL_stack_inst[7]|D_ff:D[0]|nand3~1 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[0]|D[0]|nand3~2|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[0]|D[0]|nand3~2|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[1]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[1]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[2]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[2]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[3]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[3]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[4]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[4]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[5]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[5]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[6]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[6]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; SRwPL_stack_inst[7]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; SRwPL_stack_inst[7]|D[0]|nand3~1|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout                                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]                              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk                                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk                                ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; OUT[*]      ; clk        ; 6.337 ; 6.337 ; Rise       ; clk             ;
+;  OUT[0]     ; clk        ; 6.110 ; 6.110 ; Rise       ; clk             ;
+;  OUT[1]     ; clk        ; 6.337 ; 6.337 ; Rise       ; clk             ;
+;  OUT[2]     ; clk        ; 6.322 ; 6.322 ; Rise       ; clk             ;
+;  OUT[3]     ; clk        ; 6.075 ; 6.075 ; Rise       ; clk             ;
+;  OUT[4]     ; clk        ; 6.052 ; 6.052 ; Rise       ; clk             ;
+;  OUT[5]     ; clk        ; 6.274 ; 6.274 ; Rise       ; clk             ;
+;  OUT[6]     ; clk        ; 5.976 ; 5.976 ; Rise       ; clk             ;
+;  OUT[7]     ; clk        ; 6.030 ; 6.030 ; Rise       ; clk             ;
+; counter[*]  ; clk        ; 6.785 ; 6.785 ; Rise       ; clk             ;
+;  counter[0] ; clk        ; 4.183 ; 4.183 ; Rise       ; clk             ;
+;  counter[1] ; clk        ; 3.608 ; 3.608 ; Rise       ; clk             ;
+;  counter[2] ; clk        ; 6.619 ; 6.619 ; Rise       ; clk             ;
+;  counter[3] ; clk        ; 4.041 ; 4.041 ; Rise       ; clk             ;
+;  counter[4] ; clk        ; 6.785 ; 6.785 ; Rise       ; clk             ;
+;  counter[5] ; clk        ; 4.504 ; 4.504 ; Rise       ; clk             ;
+;  counter[6] ; clk        ; 3.716 ; 3.716 ; Rise       ; clk             ;
+;  counter[7] ; clk        ; 3.818 ; 3.818 ; Rise       ; clk             ;
+; empty       ; clk        ; 4.873 ; 4.873 ; Rise       ; clk             ;
+; full        ; clk        ; 4.108 ; 4.108 ; Rise       ; clk             ;
+; OUT[*]      ; clk        ; 6.337 ; 6.337 ; Fall       ; clk             ;
+;  OUT[0]     ; clk        ; 6.110 ; 6.110 ; Fall       ; clk             ;
+;  OUT[1]     ; clk        ; 6.337 ; 6.337 ; Fall       ; clk             ;
+;  OUT[2]     ; clk        ; 6.322 ; 6.322 ; Fall       ; clk             ;
+;  OUT[3]     ; clk        ; 6.075 ; 6.075 ; Fall       ; clk             ;
+;  OUT[4]     ; clk        ; 6.052 ; 6.052 ; Fall       ; clk             ;
+;  OUT[5]     ; clk        ; 6.274 ; 6.274 ; Fall       ; clk             ;
+;  OUT[6]     ; clk        ; 5.976 ; 5.976 ; Fall       ; clk             ;
+;  OUT[7]     ; clk        ; 6.030 ; 6.030 ; Fall       ; clk             ;
+; counter[*]  ; clk        ; 6.785 ; 6.785 ; Fall       ; clk             ;
+;  counter[0] ; clk        ; 4.183 ; 4.183 ; Fall       ; clk             ;
+;  counter[1] ; clk        ; 3.608 ; 3.608 ; Fall       ; clk             ;
+;  counter[2] ; clk        ; 6.619 ; 6.619 ; Fall       ; clk             ;
+;  counter[3] ; clk        ; 4.041 ; 4.041 ; Fall       ; clk             ;
+;  counter[4] ; clk        ; 6.785 ; 6.785 ; Fall       ; clk             ;
+;  counter[5] ; clk        ; 4.504 ; 4.504 ; Fall       ; clk             ;
+;  counter[6] ; clk        ; 3.716 ; 3.716 ; Fall       ; clk             ;
+;  counter[7] ; clk        ; 3.818 ; 3.818 ; Fall       ; clk             ;
+; empty       ; clk        ; 4.873 ; 4.873 ; Fall       ; clk             ;
+; full        ; clk        ; 4.108 ; 4.108 ; Fall       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; OUT[*]      ; clk        ; 3.131 ; 3.131 ; Rise       ; clk             ;
+;  OUT[0]     ; clk        ; 3.131 ; 3.131 ; Rise       ; clk             ;
+;  OUT[1]     ; clk        ; 3.172 ; 3.172 ; Rise       ; clk             ;
+;  OUT[2]     ; clk        ; 3.298 ; 3.298 ; Rise       ; clk             ;
+;  OUT[3]     ; clk        ; 3.159 ; 3.159 ; Rise       ; clk             ;
+;  OUT[4]     ; clk        ; 3.196 ; 3.196 ; Rise       ; clk             ;
+;  OUT[5]     ; clk        ; 3.231 ; 3.231 ; Rise       ; clk             ;
+;  OUT[6]     ; clk        ; 3.196 ; 3.196 ; Rise       ; clk             ;
+;  OUT[7]     ; clk        ; 3.204 ; 3.204 ; Rise       ; clk             ;
+; counter[*]  ; clk        ; 2.614 ; 2.614 ; Rise       ; clk             ;
+;  counter[0] ; clk        ; 3.259 ; 3.259 ; Rise       ; clk             ;
+;  counter[1] ; clk        ; 2.618 ; 2.618 ; Rise       ; clk             ;
+;  counter[2] ; clk        ; 2.614 ; 2.614 ; Rise       ; clk             ;
+;  counter[3] ; clk        ; 3.069 ; 3.069 ; Rise       ; clk             ;
+;  counter[4] ; clk        ; 2.993 ; 2.993 ; Rise       ; clk             ;
+;  counter[5] ; clk        ; 3.147 ; 3.147 ; Rise       ; clk             ;
+;  counter[6] ; clk        ; 2.629 ; 2.629 ; Rise       ; clk             ;
+;  counter[7] ; clk        ; 2.829 ; 2.829 ; Rise       ; clk             ;
+; empty       ; clk        ; 3.629 ; 3.629 ; Rise       ; clk             ;
+; full        ; clk        ; 3.136 ; 3.136 ; Rise       ; clk             ;
+; OUT[*]      ; clk        ; 3.131 ; 3.131 ; Fall       ; clk             ;
+;  OUT[0]     ; clk        ; 3.131 ; 3.131 ; Fall       ; clk             ;
+;  OUT[1]     ; clk        ; 3.172 ; 3.172 ; Fall       ; clk             ;
+;  OUT[2]     ; clk        ; 3.298 ; 3.298 ; Fall       ; clk             ;
+;  OUT[3]     ; clk        ; 3.159 ; 3.159 ; Fall       ; clk             ;
+;  OUT[4]     ; clk        ; 3.196 ; 3.196 ; Fall       ; clk             ;
+;  OUT[5]     ; clk        ; 3.231 ; 3.231 ; Fall       ; clk             ;
+;  OUT[6]     ; clk        ; 3.196 ; 3.196 ; Fall       ; clk             ;
+;  OUT[7]     ; clk        ; 3.204 ; 3.204 ; Fall       ; clk             ;
+; counter[*]  ; clk        ; 2.614 ; 2.614 ; Fall       ; clk             ;
+;  counter[0] ; clk        ; 3.259 ; 3.259 ; Fall       ; clk             ;
+;  counter[1] ; clk        ; 2.618 ; 2.618 ; Fall       ; clk             ;
+;  counter[2] ; clk        ; 2.614 ; 2.614 ; Fall       ; clk             ;
+;  counter[3] ; clk        ; 3.069 ; 3.069 ; Fall       ; clk             ;
+;  counter[4] ; clk        ; 2.993 ; 2.993 ; Fall       ; clk             ;
+;  counter[5] ; clk        ; 3.147 ; 3.147 ; Fall       ; clk             ;
+;  counter[6] ; clk        ; 2.629 ; 2.629 ; Fall       ; clk             ;
+;  counter[7] ; clk        ; 2.829 ; 2.829 ; Fall       ; clk             ;
+; empty       ; clk        ; 3.629 ; 3.629 ; Fall       ; clk             ;
+; full        ; clk        ; 3.136 ; 3.136 ; Fall       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; En         ; OUT[0]      ; 6.866 ; 6.668 ; 6.668 ; 6.866 ;
+; En         ; OUT[1]      ; 7.093 ; 6.792 ; 6.792 ; 7.093 ;
+; En         ; OUT[2]      ; 7.078 ; 6.775 ; 6.775 ; 7.078 ;
+; En         ; OUT[3]      ; 6.831 ; 6.535 ; 6.535 ; 6.831 ;
+; En         ; OUT[4]      ; 6.808 ; 6.615 ; 6.615 ; 6.808 ;
+; En         ; OUT[5]      ; 7.030 ; 6.726 ; 6.726 ; 7.030 ;
+; En         ; OUT[6]      ; 6.732 ; 6.566 ; 6.566 ; 6.732 ;
+; En         ; OUT[7]      ; 6.786 ; 6.695 ; 6.695 ; 6.786 ;
+; En         ; counter[0]  ;       ; 5.284 ; 5.284 ;       ;
+; En         ; counter[1]  ; 4.672 ; 4.672 ; 4.672 ; 4.672 ;
+; En         ; counter[2]  ; 7.683 ; 7.683 ; 7.683 ; 7.683 ;
+; En         ; counter[3]  ; 5.105 ; 5.105 ; 5.105 ; 5.105 ;
+; En         ; counter[4]  ; 7.849 ; 7.849 ; 7.849 ; 7.849 ;
+; En         ; counter[5]  ; 5.568 ; 5.568 ; 5.568 ; 5.568 ;
+; En         ; counter[6]  ; 4.780 ; 4.780 ; 4.780 ; 4.780 ;
+; En         ; counter[7]  ; 4.882 ; 4.882 ; 4.882 ; 4.882 ;
+; En         ; empty       ; 5.974 ; 5.665 ; 5.665 ; 5.974 ;
+; En         ; full        ; 5.182 ; 5.172 ; 5.172 ; 5.182 ;
+; IN[0]      ; OUT[0]      ; 5.262 ;       ;       ; 5.262 ;
+; IN[1]      ; OUT[1]      ; 5.649 ;       ;       ; 5.649 ;
+; IN[2]      ; OUT[2]      ; 5.886 ;       ;       ; 5.886 ;
+; IN[3]      ; OUT[3]      ; 5.367 ;       ;       ; 5.367 ;
+; IN[4]      ; OUT[4]      ; 5.303 ;       ;       ; 5.303 ;
+; IN[5]      ; OUT[5]      ; 5.670 ;       ;       ; 5.670 ;
+; IN[6]      ; OUT[6]      ; 5.263 ;       ;       ; 5.263 ;
+; IN[7]      ; OUT[7]      ; 5.284 ;       ;       ; 5.284 ;
+; PushPop    ; OUT[0]      ; 8.688 ; 8.490 ; 8.490 ; 8.688 ;
+; PushPop    ; OUT[1]      ; 8.915 ; 8.614 ; 8.614 ; 8.915 ;
+; PushPop    ; OUT[2]      ; 8.900 ; 8.597 ; 8.597 ; 8.900 ;
+; PushPop    ; OUT[3]      ; 8.653 ; 8.357 ; 8.357 ; 8.653 ;
+; PushPop    ; OUT[4]      ; 8.630 ; 8.437 ; 8.437 ; 8.630 ;
+; PushPop    ; OUT[5]      ; 8.852 ; 8.548 ; 8.548 ; 8.852 ;
+; PushPop    ; OUT[6]      ; 8.554 ; 8.388 ; 8.388 ; 8.554 ;
+; PushPop    ; OUT[7]      ; 8.608 ; 8.517 ; 8.517 ; 8.608 ;
+; PushPop    ; counter[0]  ;       ; 7.106 ; 7.106 ;       ;
+; PushPop    ; counter[1]  ; 6.494 ; 6.494 ; 6.494 ; 6.494 ;
+; PushPop    ; counter[2]  ; 9.505 ; 9.505 ; 9.505 ; 9.505 ;
+; PushPop    ; counter[3]  ; 6.927 ; 6.927 ; 6.927 ; 6.927 ;
+; PushPop    ; counter[4]  ; 9.671 ; 9.671 ; 9.671 ; 9.671 ;
+; PushPop    ; counter[5]  ; 7.390 ; 7.390 ; 7.390 ; 7.390 ;
+; PushPop    ; counter[6]  ; 6.602 ; 6.602 ; 6.602 ; 6.602 ;
+; PushPop    ; counter[7]  ; 6.704 ; 6.704 ; 6.704 ; 6.704 ;
+; PushPop    ; empty       ; 7.796 ; 7.487 ; 7.487 ; 7.796 ;
+; PushPop    ; full        ; 7.004 ; 6.994 ; 6.994 ; 7.004 ;
+; reset      ; OUT[0]      ; 6.857 ; 7.055 ; 7.055 ; 6.857 ;
+; reset      ; OUT[1]      ; 6.981 ; 7.282 ; 7.282 ; 6.981 ;
+; reset      ; OUT[2]      ; 6.964 ; 7.267 ; 7.267 ; 6.964 ;
+; reset      ; OUT[3]      ; 6.724 ; 7.020 ; 7.020 ; 6.724 ;
+; reset      ; OUT[4]      ; 6.804 ; 6.997 ; 6.997 ; 6.804 ;
+; reset      ; OUT[5]      ; 6.915 ; 7.219 ; 7.219 ; 6.915 ;
+; reset      ; OUT[6]      ; 6.755 ; 6.921 ; 6.921 ; 6.755 ;
+; reset      ; OUT[7]      ; 6.884 ; 6.975 ; 6.975 ; 6.884 ;
+; reset      ; counter[0]  ; 5.473 ; 4.786 ; 4.786 ; 5.473 ;
+; reset      ; counter[1]  ; 4.861 ; 4.861 ; 4.861 ; 4.861 ;
+; reset      ; counter[2]  ; 7.872 ; 7.872 ; 7.872 ; 7.872 ;
+; reset      ; counter[3]  ; 5.294 ; 5.294 ; 5.294 ; 5.294 ;
+; reset      ; counter[4]  ; 8.038 ; 8.038 ; 8.038 ; 8.038 ;
+; reset      ; counter[5]  ; 5.757 ; 5.757 ; 5.757 ; 5.757 ;
+; reset      ; counter[6]  ; 4.969 ; 4.969 ; 4.969 ; 4.969 ;
+; reset      ; counter[7]  ; 5.071 ; 5.071 ; 5.071 ; 5.071 ;
+; reset      ; empty       ; 5.854 ; 6.163 ; 6.163 ; 5.854 ;
+; reset      ; full        ; 5.361 ; 5.371 ; 5.371 ; 5.361 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; En         ; OUT[0]      ; 3.870 ; 4.056 ; 4.056 ; 3.870 ;
+; En         ; OUT[1]      ; 4.160 ; 4.357 ; 4.357 ; 4.160 ;
+; En         ; OUT[2]      ; 4.256 ; 4.444 ; 4.444 ; 4.256 ;
+; En         ; OUT[3]      ; 3.941 ; 4.157 ; 4.157 ; 3.941 ;
+; En         ; OUT[4]      ; 4.049 ; 4.105 ; 4.105 ; 4.049 ;
+; En         ; OUT[5]      ; 4.132 ; 4.324 ; 4.324 ; 4.132 ;
+; En         ; OUT[6]      ; 3.949 ; 4.147 ; 4.147 ; 3.949 ;
+; En         ; OUT[7]      ; 4.026 ; 4.100 ; 4.100 ; 4.026 ;
+; En         ; counter[0]  ;       ; 4.711 ; 4.711 ;       ;
+; En         ; counter[1]  ; 4.099 ; 4.099 ; 4.099 ; 4.099 ;
+; En         ; counter[2]  ; 7.110 ; 7.110 ; 7.110 ; 7.110 ;
+; En         ; counter[3]  ; 4.532 ; 4.532 ; 4.532 ; 4.532 ;
+; En         ; counter[4]  ; 7.276 ; 7.276 ; 7.276 ; 7.276 ;
+; En         ; counter[5]  ; 4.995 ; 4.995 ; 4.995 ; 4.995 ;
+; En         ; counter[6]  ; 4.207 ; 4.207 ; 4.207 ; 4.207 ;
+; En         ; counter[7]  ; 4.309 ; 4.309 ; 4.309 ; 4.309 ;
+; En         ; empty       ; 4.853 ; 5.092 ; 5.092 ; 4.853 ;
+; En         ; full        ; 4.474 ; 4.599 ; 4.599 ; 4.474 ;
+; IN[0]      ; OUT[0]      ; 5.262 ;       ;       ; 5.262 ;
+; IN[1]      ; OUT[1]      ; 5.649 ;       ;       ; 5.649 ;
+; IN[2]      ; OUT[2]      ; 5.886 ;       ;       ; 5.886 ;
+; IN[3]      ; OUT[3]      ; 5.367 ;       ;       ; 5.367 ;
+; IN[4]      ; OUT[4]      ; 5.303 ;       ;       ; 5.303 ;
+; IN[5]      ; OUT[5]      ; 5.670 ;       ;       ; 5.670 ;
+; IN[6]      ; OUT[6]      ; 5.263 ;       ;       ; 5.263 ;
+; IN[7]      ; OUT[7]      ; 5.284 ;       ;       ; 5.284 ;
+; PushPop    ; OUT[0]      ; 6.062 ; 5.876 ; 5.876 ; 6.062 ;
+; PushPop    ; OUT[1]      ; 6.363 ; 6.166 ; 6.166 ; 6.363 ;
+; PushPop    ; OUT[2]      ; 6.450 ; 6.262 ; 6.262 ; 6.450 ;
+; PushPop    ; OUT[3]      ; 6.163 ; 5.947 ; 5.947 ; 6.163 ;
+; PushPop    ; OUT[4]      ; 6.111 ; 6.055 ; 6.055 ; 6.111 ;
+; PushPop    ; OUT[5]      ; 6.330 ; 6.138 ; 6.138 ; 6.330 ;
+; PushPop    ; OUT[6]      ; 6.153 ; 5.955 ; 5.955 ; 6.153 ;
+; PushPop    ; OUT[7]      ; 6.106 ; 6.032 ; 6.032 ; 6.106 ;
+; PushPop    ; counter[0]  ;       ; 6.468 ; 6.468 ;       ;
+; PushPop    ; counter[1]  ; 5.856 ; 5.856 ; 5.856 ; 5.856 ;
+; PushPop    ; counter[2]  ; 8.867 ; 8.867 ; 8.867 ; 8.867 ;
+; PushPop    ; counter[3]  ; 6.289 ; 6.289 ; 6.289 ; 6.289 ;
+; PushPop    ; counter[4]  ; 9.033 ; 9.033 ; 9.033 ; 9.033 ;
+; PushPop    ; counter[5]  ; 6.752 ; 6.752 ; 6.752 ; 6.752 ;
+; PushPop    ; counter[6]  ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; PushPop    ; counter[7]  ; 6.066 ; 6.066 ; 6.066 ; 6.066 ;
+; PushPop    ; empty       ; 6.610 ; 6.849 ; 6.849 ; 6.610 ;
+; PushPop    ; full        ; 6.231 ; 6.356 ; 6.356 ; 6.231 ;
+; reset      ; OUT[0]      ; 4.402 ; 4.588 ; 4.588 ; 4.402 ;
+; reset      ; OUT[1]      ; 4.692 ; 4.889 ; 4.889 ; 4.692 ;
+; reset      ; OUT[2]      ; 4.788 ; 4.976 ; 4.976 ; 4.788 ;
+; reset      ; OUT[3]      ; 4.473 ; 4.689 ; 4.689 ; 4.473 ;
+; reset      ; OUT[4]      ; 4.581 ; 4.637 ; 4.637 ; 4.581 ;
+; reset      ; OUT[5]      ; 4.664 ; 4.856 ; 4.856 ; 4.664 ;
+; reset      ; OUT[6]      ; 4.481 ; 4.679 ; 4.679 ; 4.481 ;
+; reset      ; OUT[7]      ; 4.558 ; 4.632 ; 4.632 ; 4.558 ;
+; reset      ; counter[0]  ; 5.080 ; 4.766 ; 4.766 ; 5.080 ;
+; reset      ; counter[1]  ; 4.154 ; 4.154 ; 4.154 ; 4.154 ;
+; reset      ; counter[2]  ; 7.165 ; 7.165 ; 7.165 ; 7.165 ;
+; reset      ; counter[3]  ; 4.587 ; 4.587 ; 4.587 ; 4.587 ;
+; reset      ; counter[4]  ; 7.331 ; 7.331 ; 7.331 ; 7.331 ;
+; reset      ; counter[5]  ; 5.050 ; 5.050 ; 5.050 ; 5.050 ;
+; reset      ; counter[6]  ; 4.262 ; 4.262 ; 4.262 ; 4.262 ;
+; reset      ; counter[7]  ; 4.364 ; 4.364 ; 4.364 ; 4.364 ;
+; reset      ; empty       ; 4.908 ; 5.147 ; 5.147 ; 4.908 ;
+; reset      ; full        ; 4.529 ; 4.654 ; 4.654 ; 4.529 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; -8.259   ; 0.031   ; -1.380              ;
+;  clk             ; N/A   ; N/A  ; -8.259   ; 0.031   ; -1.380              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; -63.0    ; 0.0     ; -1.38               ;
+;  clk             ; N/A   ; N/A  ; -63.000  ; 0.000   ; -1.380              ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; OUT[*]      ; clk        ; 12.935 ; 12.935 ; Rise       ; clk             ;
+;  OUT[0]     ; clk        ; 12.381 ; 12.381 ; Rise       ; clk             ;
+;  OUT[1]     ; clk        ; 12.935 ; 12.935 ; Rise       ; clk             ;
+;  OUT[2]     ; clk        ; 12.887 ; 12.887 ; Rise       ; clk             ;
+;  OUT[3]     ; clk        ; 12.309 ; 12.309 ; Rise       ; clk             ;
+;  OUT[4]     ; clk        ; 12.235 ; 12.235 ; Rise       ; clk             ;
+;  OUT[5]     ; clk        ; 12.750 ; 12.750 ; Rise       ; clk             ;
+;  OUT[6]     ; clk        ; 12.064 ; 12.064 ; Rise       ; clk             ;
+;  OUT[7]     ; clk        ; 12.198 ; 12.198 ; Rise       ; clk             ;
+; counter[*]  ; clk        ; 13.728 ; 13.728 ; Rise       ; clk             ;
+;  counter[0] ; clk        ; 8.302  ; 8.302  ; Rise       ; clk             ;
+;  counter[1] ; clk        ; 7.182  ; 7.182  ; Rise       ; clk             ;
+;  counter[2] ; clk        ; 13.485 ; 13.485 ; Rise       ; clk             ;
+;  counter[3] ; clk        ; 8.025  ; 8.025  ; Rise       ; clk             ;
+;  counter[4] ; clk        ; 13.728 ; 13.728 ; Rise       ; clk             ;
+;  counter[5] ; clk        ; 9.066  ; 9.066  ; Rise       ; clk             ;
+;  counter[6] ; clk        ; 7.453  ; 7.453  ; Rise       ; clk             ;
+;  counter[7] ; clk        ; 7.571  ; 7.571  ; Rise       ; clk             ;
+; empty       ; clk        ; 9.838  ; 9.838  ; Rise       ; clk             ;
+; full        ; clk        ; 8.223  ; 8.223  ; Rise       ; clk             ;
+; OUT[*]      ; clk        ; 12.935 ; 12.935 ; Fall       ; clk             ;
+;  OUT[0]     ; clk        ; 12.381 ; 12.381 ; Fall       ; clk             ;
+;  OUT[1]     ; clk        ; 12.935 ; 12.935 ; Fall       ; clk             ;
+;  OUT[2]     ; clk        ; 12.887 ; 12.887 ; Fall       ; clk             ;
+;  OUT[3]     ; clk        ; 12.309 ; 12.309 ; Fall       ; clk             ;
+;  OUT[4]     ; clk        ; 12.235 ; 12.235 ; Fall       ; clk             ;
+;  OUT[5]     ; clk        ; 12.750 ; 12.750 ; Fall       ; clk             ;
+;  OUT[6]     ; clk        ; 12.064 ; 12.064 ; Fall       ; clk             ;
+;  OUT[7]     ; clk        ; 12.198 ; 12.198 ; Fall       ; clk             ;
+; counter[*]  ; clk        ; 13.728 ; 13.728 ; Fall       ; clk             ;
+;  counter[0] ; clk        ; 8.302  ; 8.302  ; Fall       ; clk             ;
+;  counter[1] ; clk        ; 7.182  ; 7.182  ; Fall       ; clk             ;
+;  counter[2] ; clk        ; 13.485 ; 13.485 ; Fall       ; clk             ;
+;  counter[3] ; clk        ; 8.025  ; 8.025  ; Fall       ; clk             ;
+;  counter[4] ; clk        ; 13.728 ; 13.728 ; Fall       ; clk             ;
+;  counter[5] ; clk        ; 9.066  ; 9.066  ; Fall       ; clk             ;
+;  counter[6] ; clk        ; 7.453  ; 7.453  ; Fall       ; clk             ;
+;  counter[7] ; clk        ; 7.571  ; 7.571  ; Fall       ; clk             ;
+; empty       ; clk        ; 9.838  ; 9.838  ; Fall       ; clk             ;
+; full        ; clk        ; 8.223  ; 8.223  ; Fall       ; clk             ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; OUT[*]      ; clk        ; 3.131 ; 3.131 ; Rise       ; clk             ;
+;  OUT[0]     ; clk        ; 3.131 ; 3.131 ; Rise       ; clk             ;
+;  OUT[1]     ; clk        ; 3.172 ; 3.172 ; Rise       ; clk             ;
+;  OUT[2]     ; clk        ; 3.298 ; 3.298 ; Rise       ; clk             ;
+;  OUT[3]     ; clk        ; 3.159 ; 3.159 ; Rise       ; clk             ;
+;  OUT[4]     ; clk        ; 3.196 ; 3.196 ; Rise       ; clk             ;
+;  OUT[5]     ; clk        ; 3.231 ; 3.231 ; Rise       ; clk             ;
+;  OUT[6]     ; clk        ; 3.196 ; 3.196 ; Rise       ; clk             ;
+;  OUT[7]     ; clk        ; 3.204 ; 3.204 ; Rise       ; clk             ;
+; counter[*]  ; clk        ; 2.614 ; 2.614 ; Rise       ; clk             ;
+;  counter[0] ; clk        ; 3.259 ; 3.259 ; Rise       ; clk             ;
+;  counter[1] ; clk        ; 2.618 ; 2.618 ; Rise       ; clk             ;
+;  counter[2] ; clk        ; 2.614 ; 2.614 ; Rise       ; clk             ;
+;  counter[3] ; clk        ; 3.069 ; 3.069 ; Rise       ; clk             ;
+;  counter[4] ; clk        ; 2.993 ; 2.993 ; Rise       ; clk             ;
+;  counter[5] ; clk        ; 3.147 ; 3.147 ; Rise       ; clk             ;
+;  counter[6] ; clk        ; 2.629 ; 2.629 ; Rise       ; clk             ;
+;  counter[7] ; clk        ; 2.829 ; 2.829 ; Rise       ; clk             ;
+; empty       ; clk        ; 3.629 ; 3.629 ; Rise       ; clk             ;
+; full        ; clk        ; 3.136 ; 3.136 ; Rise       ; clk             ;
+; OUT[*]      ; clk        ; 3.131 ; 3.131 ; Fall       ; clk             ;
+;  OUT[0]     ; clk        ; 3.131 ; 3.131 ; Fall       ; clk             ;
+;  OUT[1]     ; clk        ; 3.172 ; 3.172 ; Fall       ; clk             ;
+;  OUT[2]     ; clk        ; 3.298 ; 3.298 ; Fall       ; clk             ;
+;  OUT[3]     ; clk        ; 3.159 ; 3.159 ; Fall       ; clk             ;
+;  OUT[4]     ; clk        ; 3.196 ; 3.196 ; Fall       ; clk             ;
+;  OUT[5]     ; clk        ; 3.231 ; 3.231 ; Fall       ; clk             ;
+;  OUT[6]     ; clk        ; 3.196 ; 3.196 ; Fall       ; clk             ;
+;  OUT[7]     ; clk        ; 3.204 ; 3.204 ; Fall       ; clk             ;
+; counter[*]  ; clk        ; 2.614 ; 2.614 ; Fall       ; clk             ;
+;  counter[0] ; clk        ; 3.259 ; 3.259 ; Fall       ; clk             ;
+;  counter[1] ; clk        ; 2.618 ; 2.618 ; Fall       ; clk             ;
+;  counter[2] ; clk        ; 2.614 ; 2.614 ; Fall       ; clk             ;
+;  counter[3] ; clk        ; 3.069 ; 3.069 ; Fall       ; clk             ;
+;  counter[4] ; clk        ; 2.993 ; 2.993 ; Fall       ; clk             ;
+;  counter[5] ; clk        ; 3.147 ; 3.147 ; Fall       ; clk             ;
+;  counter[6] ; clk        ; 2.629 ; 2.629 ; Fall       ; clk             ;
+;  counter[7] ; clk        ; 2.829 ; 2.829 ; Fall       ; clk             ;
+; empty       ; clk        ; 3.629 ; 3.629 ; Fall       ; clk             ;
+; full        ; clk        ; 3.136 ; 3.136 ; Fall       ; clk             ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; En         ; OUT[0]      ; 13.898 ; 13.474 ; 13.474 ; 13.898 ;
+; En         ; OUT[1]      ; 14.452 ; 13.801 ; 13.801 ; 14.452 ;
+; En         ; OUT[2]      ; 14.404 ; 13.752 ; 13.752 ; 14.404 ;
+; En         ; OUT[3]      ; 13.826 ; 13.152 ; 13.152 ; 13.826 ;
+; En         ; OUT[4]      ; 13.752 ; 13.338 ; 13.338 ; 13.752 ;
+; En         ; OUT[5]      ; 14.267 ; 13.601 ; 13.601 ; 14.267 ;
+; En         ; OUT[6]      ; 13.581 ; 13.180 ; 13.180 ; 13.581 ;
+; En         ; OUT[7]      ; 13.715 ; 13.522 ; 13.522 ; 13.715 ;
+; En         ; counter[0]  ;        ; 10.447 ; 10.447 ;        ;
+; En         ; counter[1]  ; 9.269  ; 9.269  ; 9.269  ; 9.269  ;
+; En         ; counter[2]  ; 15.572 ; 15.572 ; 15.572 ; 15.572 ;
+; En         ; counter[3]  ; 10.112 ; 10.112 ; 10.112 ; 10.112 ;
+; En         ; counter[4]  ; 15.815 ; 15.815 ; 15.815 ; 15.815 ;
+; En         ; counter[5]  ; 11.153 ; 11.153 ; 11.153 ; 11.153 ;
+; En         ; counter[6]  ; 9.540  ; 9.540  ; 9.540  ; 9.540  ;
+; En         ; counter[7]  ; 9.658  ; 9.658  ; 9.658  ; 9.658  ;
+; En         ; empty       ; 11.983 ; 11.253 ; 11.253 ; 11.983 ;
+; En         ; full        ; 10.310 ; 10.310 ; 10.310 ; 10.310 ;
+; IN[0]      ; OUT[0]      ; 9.492  ;        ;        ; 9.492  ;
+; IN[1]      ; OUT[1]      ; 10.376 ;        ;        ; 10.376 ;
+; IN[2]      ; OUT[2]      ; 10.866 ;        ;        ; 10.866 ;
+; IN[3]      ; OUT[3]      ; 9.691  ;        ;        ; 9.691  ;
+; IN[4]      ; OUT[4]      ; 9.565  ;        ;        ; 9.565  ;
+; IN[5]      ; OUT[5]      ; 10.387 ;        ;        ; 10.387 ;
+; IN[6]      ; OUT[6]      ; 9.417  ;        ;        ; 9.417  ;
+; IN[7]      ; OUT[7]      ; 9.544  ;        ;        ; 9.544  ;
+; PushPop    ; OUT[0]      ; 16.782 ; 16.358 ; 16.358 ; 16.782 ;
+; PushPop    ; OUT[1]      ; 17.336 ; 16.685 ; 16.685 ; 17.336 ;
+; PushPop    ; OUT[2]      ; 17.288 ; 16.636 ; 16.636 ; 17.288 ;
+; PushPop    ; OUT[3]      ; 16.710 ; 16.036 ; 16.036 ; 16.710 ;
+; PushPop    ; OUT[4]      ; 16.636 ; 16.222 ; 16.222 ; 16.636 ;
+; PushPop    ; OUT[5]      ; 17.151 ; 16.485 ; 16.485 ; 17.151 ;
+; PushPop    ; OUT[6]      ; 16.465 ; 16.064 ; 16.064 ; 16.465 ;
+; PushPop    ; OUT[7]      ; 16.599 ; 16.406 ; 16.406 ; 16.599 ;
+; PushPop    ; counter[0]  ;        ; 13.331 ; 13.331 ;        ;
+; PushPop    ; counter[1]  ; 12.153 ; 12.153 ; 12.153 ; 12.153 ;
+; PushPop    ; counter[2]  ; 18.456 ; 18.456 ; 18.456 ; 18.456 ;
+; PushPop    ; counter[3]  ; 12.996 ; 12.996 ; 12.996 ; 12.996 ;
+; PushPop    ; counter[4]  ; 18.699 ; 18.699 ; 18.699 ; 18.699 ;
+; PushPop    ; counter[5]  ; 14.037 ; 14.037 ; 14.037 ; 14.037 ;
+; PushPop    ; counter[6]  ; 12.424 ; 12.424 ; 12.424 ; 12.424 ;
+; PushPop    ; counter[7]  ; 12.542 ; 12.542 ; 12.542 ; 12.542 ;
+; PushPop    ; empty       ; 14.867 ; 14.137 ; 14.137 ; 14.867 ;
+; PushPop    ; full        ; 13.194 ; 13.194 ; 13.194 ; 13.194 ;
+; reset      ; OUT[0]      ; 13.918 ; 14.342 ; 14.342 ; 13.918 ;
+; reset      ; OUT[1]      ; 14.245 ; 14.896 ; 14.896 ; 14.245 ;
+; reset      ; OUT[2]      ; 14.196 ; 14.848 ; 14.848 ; 14.196 ;
+; reset      ; OUT[3]      ; 13.596 ; 14.270 ; 14.270 ; 13.596 ;
+; reset      ; OUT[4]      ; 13.782 ; 14.196 ; 14.196 ; 13.782 ;
+; reset      ; OUT[5]      ; 14.045 ; 14.711 ; 14.711 ; 14.045 ;
+; reset      ; OUT[6]      ; 13.624 ; 14.025 ; 14.025 ; 13.624 ;
+; reset      ; OUT[7]      ; 13.966 ; 14.159 ; 14.159 ; 13.966 ;
+; reset      ; counter[0]  ; 10.891 ; 9.462  ; 9.462  ; 10.891 ;
+; reset      ; counter[1]  ; 9.713  ; 9.713  ; 9.713  ; 9.713  ;
+; reset      ; counter[2]  ; 16.016 ; 16.016 ; 16.016 ; 16.016 ;
+; reset      ; counter[3]  ; 10.556 ; 10.556 ; 10.556 ; 10.556 ;
+; reset      ; counter[4]  ; 16.259 ; 16.259 ; 16.259 ; 16.259 ;
+; reset      ; counter[5]  ; 11.597 ; 11.597 ; 11.597 ; 11.597 ;
+; reset      ; counter[6]  ; 9.984  ; 9.984  ; 9.984  ; 9.984  ;
+; reset      ; counter[7]  ; 10.102 ; 10.102 ; 10.102 ; 10.102 ;
+; reset      ; empty       ; 11.697 ; 12.427 ; 12.427 ; 11.697 ;
+; reset      ; full        ; 10.754 ; 10.754 ; 10.754 ; 10.754 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; En         ; OUT[0]      ; 3.870 ; 4.056 ; 4.056 ; 3.870 ;
+; En         ; OUT[1]      ; 4.160 ; 4.357 ; 4.357 ; 4.160 ;
+; En         ; OUT[2]      ; 4.256 ; 4.444 ; 4.444 ; 4.256 ;
+; En         ; OUT[3]      ; 3.941 ; 4.157 ; 4.157 ; 3.941 ;
+; En         ; OUT[4]      ; 4.049 ; 4.105 ; 4.105 ; 4.049 ;
+; En         ; OUT[5]      ; 4.132 ; 4.324 ; 4.324 ; 4.132 ;
+; En         ; OUT[6]      ; 3.949 ; 4.147 ; 4.147 ; 3.949 ;
+; En         ; OUT[7]      ; 4.026 ; 4.100 ; 4.100 ; 4.026 ;
+; En         ; counter[0]  ;       ; 4.711 ; 4.711 ;       ;
+; En         ; counter[1]  ; 4.099 ; 4.099 ; 4.099 ; 4.099 ;
+; En         ; counter[2]  ; 7.110 ; 7.110 ; 7.110 ; 7.110 ;
+; En         ; counter[3]  ; 4.532 ; 4.532 ; 4.532 ; 4.532 ;
+; En         ; counter[4]  ; 7.276 ; 7.276 ; 7.276 ; 7.276 ;
+; En         ; counter[5]  ; 4.995 ; 4.995 ; 4.995 ; 4.995 ;
+; En         ; counter[6]  ; 4.207 ; 4.207 ; 4.207 ; 4.207 ;
+; En         ; counter[7]  ; 4.309 ; 4.309 ; 4.309 ; 4.309 ;
+; En         ; empty       ; 4.853 ; 5.092 ; 5.092 ; 4.853 ;
+; En         ; full        ; 4.474 ; 4.599 ; 4.599 ; 4.474 ;
+; IN[0]      ; OUT[0]      ; 5.262 ;       ;       ; 5.262 ;
+; IN[1]      ; OUT[1]      ; 5.649 ;       ;       ; 5.649 ;
+; IN[2]      ; OUT[2]      ; 5.886 ;       ;       ; 5.886 ;
+; IN[3]      ; OUT[3]      ; 5.367 ;       ;       ; 5.367 ;
+; IN[4]      ; OUT[4]      ; 5.303 ;       ;       ; 5.303 ;
+; IN[5]      ; OUT[5]      ; 5.670 ;       ;       ; 5.670 ;
+; IN[6]      ; OUT[6]      ; 5.263 ;       ;       ; 5.263 ;
+; IN[7]      ; OUT[7]      ; 5.284 ;       ;       ; 5.284 ;
+; PushPop    ; OUT[0]      ; 6.062 ; 5.876 ; 5.876 ; 6.062 ;
+; PushPop    ; OUT[1]      ; 6.363 ; 6.166 ; 6.166 ; 6.363 ;
+; PushPop    ; OUT[2]      ; 6.450 ; 6.262 ; 6.262 ; 6.450 ;
+; PushPop    ; OUT[3]      ; 6.163 ; 5.947 ; 5.947 ; 6.163 ;
+; PushPop    ; OUT[4]      ; 6.111 ; 6.055 ; 6.055 ; 6.111 ;
+; PushPop    ; OUT[5]      ; 6.330 ; 6.138 ; 6.138 ; 6.330 ;
+; PushPop    ; OUT[6]      ; 6.153 ; 5.955 ; 5.955 ; 6.153 ;
+; PushPop    ; OUT[7]      ; 6.106 ; 6.032 ; 6.032 ; 6.106 ;
+; PushPop    ; counter[0]  ;       ; 6.468 ; 6.468 ;       ;
+; PushPop    ; counter[1]  ; 5.856 ; 5.856 ; 5.856 ; 5.856 ;
+; PushPop    ; counter[2]  ; 8.867 ; 8.867 ; 8.867 ; 8.867 ;
+; PushPop    ; counter[3]  ; 6.289 ; 6.289 ; 6.289 ; 6.289 ;
+; PushPop    ; counter[4]  ; 9.033 ; 9.033 ; 9.033 ; 9.033 ;
+; PushPop    ; counter[5]  ; 6.752 ; 6.752 ; 6.752 ; 6.752 ;
+; PushPop    ; counter[6]  ; 5.964 ; 5.964 ; 5.964 ; 5.964 ;
+; PushPop    ; counter[7]  ; 6.066 ; 6.066 ; 6.066 ; 6.066 ;
+; PushPop    ; empty       ; 6.610 ; 6.849 ; 6.849 ; 6.610 ;
+; PushPop    ; full        ; 6.231 ; 6.356 ; 6.356 ; 6.231 ;
+; reset      ; OUT[0]      ; 4.402 ; 4.588 ; 4.588 ; 4.402 ;
+; reset      ; OUT[1]      ; 4.692 ; 4.889 ; 4.889 ; 4.692 ;
+; reset      ; OUT[2]      ; 4.788 ; 4.976 ; 4.976 ; 4.788 ;
+; reset      ; OUT[3]      ; 4.473 ; 4.689 ; 4.689 ; 4.473 ;
+; reset      ; OUT[4]      ; 4.581 ; 4.637 ; 4.637 ; 4.581 ;
+; reset      ; OUT[5]      ; 4.664 ; 4.856 ; 4.856 ; 4.664 ;
+; reset      ; OUT[6]      ; 4.481 ; 4.679 ; 4.679 ; 4.481 ;
+; reset      ; OUT[7]      ; 4.558 ; 4.632 ; 4.632 ; 4.558 ;
+; reset      ; counter[0]  ; 5.080 ; 4.766 ; 4.766 ; 5.080 ;
+; reset      ; counter[1]  ; 4.154 ; 4.154 ; 4.154 ; 4.154 ;
+; reset      ; counter[2]  ; 7.165 ; 7.165 ; 7.165 ; 7.165 ;
+; reset      ; counter[3]  ; 4.587 ; 4.587 ; 4.587 ; 4.587 ;
+; reset      ; counter[4]  ; 7.331 ; 7.331 ; 7.331 ; 7.331 ;
+; reset      ; counter[5]  ; 5.050 ; 5.050 ; 5.050 ; 5.050 ;
+; reset      ; counter[6]  ; 4.262 ; 4.262 ; 4.262 ; 4.262 ;
+; reset      ; counter[7]  ; 4.364 ; 4.364 ; 4.364 ; 4.364 ;
+; reset      ; empty       ; 4.908 ; 5.147 ; 5.147 ; 4.908 ;
+; reset      ; full        ; 4.529 ; 4.654 ; 4.654 ; 4.529 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 9744     ; 9728     ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 9744     ; 9728     ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 360   ; 360  ;
+; Unconstrained Output Ports      ; 18    ; 18   ;
+; Unconstrained Output Port Paths ; 296   ; 296  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Nov 04 09:49:24 2020
+Info: Command: quartus_sta Stack7_20 -c Stack7_20
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (335093): TimeQuest Timing Analyzer is analyzing 80 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Stack7_20.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[7]|nand4|datad"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[7]|D[0]|nand4|datab"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[3]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[4]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[7]|nand3~1|datab"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[6]|D[0]|nand4|dataa"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[3]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[5]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[7]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[6]|nand3~0|datab"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[5]|D[0]|nand4|dataa"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~0|datad"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[7]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[6]|nand3~1|datac"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[4]|D[0]|nand4|dataa"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~0|datad"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~1|datad"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand3~1|datad"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[2]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[3]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[4]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[6]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[7]|nand4|datad"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[3]|D[0]|nand4|datab"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~0|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~0|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[3]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[7]|nand3~1|datac"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[2]|D[0]|nand4|dataa"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~0|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand2|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[2]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[6]|nand3~0|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[7]|nand3~1|datab"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[1]|D[0]|nand4|dataa"
+Warning (332125): Found combinational loop of 82 nodes
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand4|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand4|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand3~1|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand2|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand4|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[1]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[2]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~0|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand2|datad"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[3]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[4]|nand3~1|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[5]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand3~0|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[6]|nand4|datad"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand3~0|dataa"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand3~0|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand3~1|datab"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand3~1|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand2|datac"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand2|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[7]|nand3~1|dataa"
+Critical Warning (332081): Design contains combinational loop of 82 nodes. Estimating the delays through the loop.
+Warning (332125): Found combinational loop of 2 nodes
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[0]|nand4|combout"
+    Warning (332126): Node "SRwPL_stack_inst[0]|D[0]|nand4|dataa"
+Warning (332125): Found combinational loop of 137 nodes
+    Warning (332126): Node "full~0|datad"
+    Warning (332126): Node "full~0|combout"
+    Warning (332126): Node "sel1~1|datac"
+    Warning (332126): Node "sel1~1|combout"
+    Warning (332126): Node "sel1~2|datad"
+    Warning (332126): Node "sel1~2|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~2|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~2|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand4|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand4|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand4|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3|dataa"
+    Warning (332126): Node "full~1|datac"
+    Warning (332126): Node "full~1|combout"
+    Warning (332126): Node "sel1~1|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3~0|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand3~0|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand4|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand4|combout"
+    Warning (332126): Node "full~1|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand4|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[6]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[6]|or0~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[6]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[7]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~2|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~2|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand4|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand4|combout"
+    Warning (332126): Node "full~0|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand4|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~0|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~1|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~1|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~2|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3~0|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3~0|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand4|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand4|combout"
+    Warning (332126): Node "full~0|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[1]|or0~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[1]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand4|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand4|combout"
+    Warning (332126): Node "sel1~2|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~1|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~1|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~2|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand4|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~0|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3~0|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand4|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand4|combout"
+    Warning (332126): Node "full~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand4|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[4]|or0~0|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[4]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[5]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~2|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~2|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand4|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand4|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand4|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~1|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~1|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~1|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~1|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[4]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[3]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand3~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[2]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~1|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~2|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand4|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[1]|or0~1|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[1]|or0~1|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~1|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~1|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand3|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand3|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand3~0|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand3~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand4|datac"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand4|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[1]|or0~0|datac"
+    Warning (332126): Node "sel1~0|dataa"
+    Warning (332126): Node "sel1~0|combout"
+    Warning (332126): Node "sel1~2|datab"
+    Warning (332126): Node "sel1~1|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[3]|or0~1|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand4|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[0]|nand3|datab"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[0]|or0~0|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[0]|or0~0|combout"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[5]|or0~1|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~1|dataa"
+    Warning (332126): Node "CounterWithParallelLoad_inst|D_ff_inst[1]|nand3|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[2]|or0~1|datad"
+    Warning (332126): Node "CounterWithParallelLoad_inst|HAS_inst[1]|or0~0|datad"
+Critical Warning (332081): Design contains combinational loop of 137 nodes. Estimating the delays through the loop.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case recovery slack is -8.259
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -8.259       -63.000 clk 
+Info (332146): Worst-case removal slack is 0.561
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.561         0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -1.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case recovery slack is -3.314
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.314       -25.254 clk 
+Info (332146): Worst-case removal slack is 0.031
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.031         0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -1.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 840 warnings
+    Info: Peak virtual memory: 4548 megabytes
+    Info: Processing ended: Wed Nov 04 09:49:26 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

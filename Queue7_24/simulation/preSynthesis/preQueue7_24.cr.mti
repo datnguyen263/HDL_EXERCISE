@@ -1,0 +1,121 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/mux2_1.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/mux2_1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module HAS
+
+Top level modules:
+	HAS
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder_main.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder_main
+
+Top level modules:
+	decoder_main
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/SRAM.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/word.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module word
+
+Top level modules:
+	word
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Comparator.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Comparator.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Comparator
+
+Top level modules:
+	Comparator
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Counter.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Counter.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Counter
+
+Top level modules:
+	Counter
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/D_latch.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_latch
+
+Top level modules:
+	D_latch
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/preSynthesis/Queue7_24_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/preSynthesis/Queue7_24_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Queue7_24_tb
+
+Top level modules:
+	Queue7_24_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/tristate.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tristate
+
+Top level modules:
+	tristate
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FAS.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FAS.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FAS
+-- Compiling module xor_gate
+
+Top level modules:
+	FAS
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FullAdder.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/FullAdder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FullAdder
+
+Top level modules:
+	FullAdder
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Components/SiquentialCircuit/D_ff.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Components/SiquentialCircuit/D_ff.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff
+
+Top level modules:
+	D_ff
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/decoder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Queue7_24.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/Queue7_24.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Queue7_24
+
+Top level modules:
+	Queue7_24
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/selector.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/selector.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module selector
+
+Top level modules:
+	selector
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/MemoryCell.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MemoryCell
+
+Top level modules:
+	MemoryCell
+
+} {} {}}

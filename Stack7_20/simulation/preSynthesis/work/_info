@@ -1,0 +1,163 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vCounterWithParallelLoad
+Z1 IADD5GDSd4K90^ol@RMdM81
+Z2 V_clOHXkKRhlzzIZSaOL=K3
+Z3 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\Stack7_20\simulation\preSynthesis
+Z4 w1604466727
+Z5 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v
+Z6 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v
+L0 8
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@counter@with@parallel@load
+Z10 !s100 <KM=WA3^lYM@DF>j]281i0
+Z11 !s108 1604470037.875000
+Z12 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v|
+Z13 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vD_ff
+Z14 I3[F3:BdBfKd8SS`^7hIQZ3
+Z15 VG=GZc5iO7ENZMEUI6T3Ua3
+R3
+Z16 w1601392007
+Z17 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v
+Z18 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v
+L0 1
+R7
+r1
+31
+R8
+Z19 n@d_ff
+Z20 !s100 6YKNfm@ebYR1OnXH`E;2P2
+Z21 !s108 1604470038.832000
+Z22 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v|
+Z23 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vHAS
+Z24 IDnE]<<_oIO6V1EHz2WJ>G1
+Z25 V0R]AbA_Pd4Rf6fbbc>blm2
+R3
+Z26 w1604464687
+Z27 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
+Z28 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
+L0 4
+R7
+r1
+31
+R8
+Z29 n@h@a@s
+Z30 !s100 B7j7BHZdClGQf5=Vb03;F1
+Z31 !s108 1604470038.197000
+Z32 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v|
+Z33 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2_1
+Z34 IDi9_[]2GlJ02jN=A29Y?70
+Z35 VU`Tb<KX1`VHimlL=N[QA;3
+R3
+Z36 w1604464679
+Z37 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v
+Z38 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v
+L0 5
+R7
+r1
+31
+R8
+Z39 !s100 dIioOL5mAGE_f`oAB5d`G2
+Z40 !s108 1604470038.528000
+Z41 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v|
+Z42 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4_1
+Z43 I@_ClIc@PZ7fiQL5;`37YR3
+Z44 V9`AC:VFYmY?gQN<MlJ?BO0
+R3
+Z45 w1601390255
+Z46 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v
+Z47 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v
+L0 1
+R7
+r1
+31
+R8
+!i10b 1
+Z48 !s100 >aU<gGB^MJWNPOFo[0ZUF1
+!s85 0
+Z49 !s108 1604470039.153000
+Z50 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v|
+Z51 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v|
+!s101 -O0
+vSRwPL_stack
+Z52 I8kHH2hP[NV:cm1HZ`aDFY3
+Z53 VFWJRVSal=z:[KMh2h6C[O1
+R3
+Z54 w1603502388
+Z55 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/SRwPL_stack.v
+Z56 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/SRwPL_stack.v
+L0 6
+R7
+r1
+31
+R8
+Z57 n@s@rw@p@l_stack
+Z58 !s100 c0fo<R@D^F02izGQ22AAE2
+Z59 !s108 1604470037.158000
+Z60 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/SRwPL_stack.v|
+Z61 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/SRwPL_stack.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vStack7_20
+Z62 IVizi4l^3MJa9=GllWbaU<2
+Z63 VaPcL0VZoS;=?YZLJ<8IGF3
+R3
+Z64 w1604459754
+Z65 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/Stack7_20.v
+Z66 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/Stack7_20.v
+L0 1
+R7
+r1
+31
+R8
+Z67 n@stack7_20
+Z68 !s100 <0hMC?cKPXa`DRkjDe9nK1
+Z69 !s108 1604470037.535000
+Z70 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/Stack7_20.v|
+Z71 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/Stack7_20.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vStack7_20_tb
+!i10b 1
+!s100 >X2I>RF[jK62]3lRki?I31
+IZPkAgFedA?`colgQF@IiY2
+VSWIPzA[8b2b[WA4;l2YY;0
+R3
+w1604459240
+8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/simulation/preSynthesis/Stack7_20_tb.v
+FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/simulation/preSynthesis/Stack7_20_tb.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1604470039.537000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/simulation/preSynthesis/Stack7_20_tb.v|
+!s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/simulation/preSynthesis/Stack7_20_tb.v|
+!s101 -O0
+R8
+n@stack7_20_tb

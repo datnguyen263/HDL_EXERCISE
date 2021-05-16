@@ -1,0 +1,1674 @@
+TimeQuest Timing Analyzer report for Queue7_24
+Wed Oct 28 10:45:47 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Minimum Pulse Width: 'ReadWrite'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Output Enable Times
+ 19. Minimum Output Enable Times
+ 20. Output Disable Times
+ 21. Minimum Output Disable Times
+ 22. Fast Model Setup Summary
+ 23. Fast Model Hold Summary
+ 24. Fast Model Recovery Summary
+ 25. Fast Model Removal Summary
+ 26. Fast Model Minimum Pulse Width Summary
+ 27. Fast Model Minimum Pulse Width: 'ReadWrite'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Output Enable Times
+ 35. Minimum Output Enable Times
+ 36. Output Disable Times
+ 37. Minimum Output Disable Times
+ 38. Multicorner Timing Analysis Summary
+ 39. Setup Times
+ 40. Hold Times
+ 41. Clock to Output Times
+ 42. Minimum Clock to Output Times
+ 43. Progagation Delay
+ 44. Minimum Progagation Delay
+ 45. Clock Transfers
+ 46. Report TCCS
+ 47. Report RSKM
+ 48. Unconstrained Paths
+ 49. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Queue7_24                                                         ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets       ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+; ReadWrite  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ReadWrite } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-----------+---------+------------------+
+; Clock     ; Slack   ; End Point TNS    ;
++-----------+---------+------------------+
+; ReadWrite ; -16.473 ; -1136044.892     ;
++-----------+---------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'ReadWrite'                                                                                                                                      ;
++---------+--------------+----------------+------------------+-----------+------------+--------------------------------------------------------------------------------------------+
+; Slack   ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                                                                                     ;
++---------+--------------+----------------+------------------+-----------+------------+--------------------------------------------------------------------------------------------+
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|and0|combout                                   ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|and0|combout                                   ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -16.473 ; -16.473      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|and0|combout                                   ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|and0|combout                                   ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[5]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[5]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -16.400 ; -16.400      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|and0|combout                                   ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|and0|combout                                   ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -16.358 ; -16.358      ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -16.358 ; -16.358      ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
++---------+--------------+----------------+------------------+-----------+------------+--------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 6.418 ; 6.418 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 4.600 ; 4.600 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 6.418 ; 6.418 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 4.227 ; 4.227 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.532 ; 5.532 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 5.161 ; 5.161 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 4.413 ; 4.413 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 4.610 ; 4.610 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 4.289 ; 4.289 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 8.405 ; 8.405 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 6.201 ; 6.201 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 8.405 ; 8.405 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.812 ; 5.812 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 7.204 ; 7.204 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.429 ; 6.429 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.685 ; 6.685 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 6.409 ; 6.409 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.974 ; 5.974 ; Fall       ; ReadWrite       ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 16.941 ; 16.941 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 15.678 ; 15.678 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 14.521 ; 14.521 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 14.796 ; 14.796 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 16.294 ; 16.294 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 16.941 ; 16.941 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 15.265 ; 15.265 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 15.841 ; 15.841 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 15.866 ; 15.866 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 16.679 ; 16.679 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 15.246 ; 15.246 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 14.489 ; 14.489 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 15.151 ; 15.151 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 15.568 ; 15.568 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 16.001 ; 16.001 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 15.428 ; 15.428 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 15.476 ; 15.476 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 16.679 ; 16.679 ; Fall       ; ReadWrite       ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 41.929 ; 41.929 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 36.637 ; 36.637 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 37.691 ; 37.691 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 36.173 ; 36.173 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 40.211 ; 40.211 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 38.236 ; 38.236 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 41.929 ; 41.929 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 39.341 ; 39.341 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 40.059 ; 40.059 ; Rise       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 18.226 ; 18.226 ; Rise       ; ReadWrite       ;
+; full        ; ReadWrite  ; 17.904 ; 17.904 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 40.999 ; 40.999 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 37.545 ; 37.545 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 36.810 ; 36.810 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 35.917 ; 35.917 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 39.545 ; 39.545 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 37.563 ; 37.563 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 40.989 ; 40.989 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 39.021 ; 39.021 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 40.999 ; 40.999 ; Fall       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 18.226 ; 18.226 ; Fall       ; ReadWrite       ;
+; full        ; ReadWrite  ; 17.904 ; 17.904 ; Fall       ; ReadWrite       ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 11.862 ; 11.862 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 11.862 ; 11.862 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 12.169 ; 12.169 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 12.430 ; 12.430 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 12.020 ; 12.020 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 12.900 ; 12.900 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 14.221 ; 14.221 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 12.333 ; 12.333 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 12.031 ; 12.031 ; Rise       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 17.286 ; 17.286 ; Rise       ; ReadWrite       ;
+; full        ; ReadWrite  ; 16.964 ; 16.964 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 10.886 ; 10.886 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 10.886 ; 10.886 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 11.349 ; 11.349 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 11.872 ; 11.872 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 11.522 ; 11.522 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 12.395 ; 12.395 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 13.826 ; 13.826 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 11.882 ; 11.882 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 11.465 ; 11.465 ; Fall       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 17.286 ; 17.286 ; Fall       ; ReadWrite       ;
+; full        ; ReadWrite  ; 16.964 ; 16.964 ; Fall       ; ReadWrite       ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; clk        ; IOports[0]  ; 37.607 ; 37.607 ; 37.607 ; 37.607 ;
+; clk        ; IOports[1]  ; 38.401 ; 38.401 ; 38.401 ; 38.401 ;
+; clk        ; IOports[2]  ; 38.196 ; 38.196 ; 38.196 ; 38.196 ;
+; clk        ; IOports[3]  ; 37.843 ; 37.843 ; 37.843 ; 37.843 ;
+; clk        ; IOports[4]  ; 38.331 ; 38.331 ; 38.331 ; 38.331 ;
+; clk        ; IOports[5]  ; 41.518 ; 41.518 ; 41.518 ; 41.518 ;
+; clk        ; IOports[6]  ; 38.707 ; 38.707 ; 38.707 ; 38.707 ;
+; clk        ; IOports[7]  ; 39.397 ; 39.397 ; 39.397 ; 39.397 ;
+; clk        ; empty       ; 19.029 ; 19.029 ; 19.029 ; 19.029 ;
+; clk        ; full        ; 18.707 ; 18.707 ; 18.707 ; 18.707 ;
+; en         ; IOports[0]  ; 41.263 ; 41.263 ; 41.263 ; 41.263 ;
+; en         ; IOports[1]  ; 42.057 ; 42.057 ; 42.057 ; 42.057 ;
+; en         ; IOports[2]  ; 41.852 ; 41.852 ; 41.852 ; 41.852 ;
+; en         ; IOports[3]  ; 41.499 ; 41.499 ; 41.499 ; 41.499 ;
+; en         ; IOports[4]  ; 41.987 ; 41.987 ; 41.987 ; 41.987 ;
+; en         ; IOports[5]  ; 45.174 ; 45.174 ; 45.174 ; 45.174 ;
+; en         ; IOports[6]  ; 42.363 ; 42.363 ; 42.363 ; 42.363 ;
+; en         ; IOports[7]  ; 43.053 ; 43.053 ; 43.053 ; 43.053 ;
+; en         ; empty       ; 22.685 ; 22.685 ; 22.685 ; 22.685 ;
+; en         ; full        ; 22.363 ; 22.363 ; 22.363 ; 22.363 ;
+; reset      ; IOports[0]  ; 37.255 ; 37.255 ; 37.255 ; 37.255 ;
+; reset      ; IOports[1]  ; 38.049 ; 38.049 ; 38.049 ; 38.049 ;
+; reset      ; IOports[2]  ; 37.844 ; 37.844 ; 37.844 ; 37.844 ;
+; reset      ; IOports[3]  ; 37.491 ; 37.491 ; 37.491 ; 37.491 ;
+; reset      ; IOports[4]  ; 37.979 ; 37.979 ; 37.979 ; 37.979 ;
+; reset      ; IOports[5]  ; 41.166 ; 41.166 ; 41.166 ; 41.166 ;
+; reset      ; IOports[6]  ; 38.355 ; 38.355 ; 38.355 ; 38.355 ;
+; reset      ; IOports[7]  ; 39.045 ; 39.045 ; 39.045 ; 39.045 ;
+; reset      ; empty       ; 18.677 ; 18.677 ; 18.677 ; 18.677 ;
+; reset      ; full        ; 18.355 ; 18.355 ; 18.355 ; 18.355 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; clk        ; IOports[0]  ; 11.223 ; 11.223 ; 11.223 ; 11.223 ;
+; clk        ; IOports[1]  ; 12.017 ; 12.017 ; 12.017 ; 12.017 ;
+; clk        ; IOports[2]  ; 11.812 ; 11.812 ; 11.812 ; 11.812 ;
+; clk        ; IOports[3]  ; 11.459 ; 11.459 ; 11.459 ; 11.459 ;
+; clk        ; IOports[4]  ; 11.947 ; 11.947 ; 11.947 ; 11.947 ;
+; clk        ; IOports[5]  ; 12.033 ; 12.033 ; 12.033 ; 12.033 ;
+; clk        ; IOports[6]  ; 11.479 ; 11.479 ; 11.479 ; 11.479 ;
+; clk        ; IOports[7]  ; 11.438 ; 11.438 ; 11.438 ; 11.438 ;
+; clk        ; empty       ; 16.814 ; 16.814 ; 16.814 ; 16.814 ;
+; clk        ; full        ; 16.492 ; 16.492 ; 16.492 ; 16.492 ;
+; en         ; IOports[0]  ; 14.519 ; 14.519 ; 14.519 ; 14.519 ;
+; en         ; IOports[1]  ; 15.313 ; 15.313 ; 15.313 ; 15.313 ;
+; en         ; IOports[2]  ; 15.108 ; 15.108 ; 15.108 ; 15.108 ;
+; en         ; IOports[3]  ; 14.755 ; 14.755 ; 14.755 ; 14.755 ;
+; en         ; IOports[4]  ; 15.243 ; 15.243 ; 15.243 ; 15.243 ;
+; en         ; IOports[5]  ; 15.329 ; 15.329 ; 15.329 ; 15.329 ;
+; en         ; IOports[6]  ; 14.775 ; 14.775 ; 14.775 ; 14.775 ;
+; en         ; IOports[7]  ; 14.734 ; 14.734 ; 14.734 ; 14.734 ;
+; en         ; empty       ; 21.458 ; 21.458 ; 21.458 ; 21.458 ;
+; en         ; full        ; 21.136 ; 21.136 ; 21.136 ; 21.136 ;
+; reset      ; IOports[0]  ; 10.511 ; 10.511 ; 10.511 ; 10.511 ;
+; reset      ; IOports[1]  ; 11.305 ; 11.305 ; 11.305 ; 11.305 ;
+; reset      ; IOports[2]  ; 11.100 ; 11.100 ; 11.100 ; 11.100 ;
+; reset      ; IOports[3]  ; 10.747 ; 10.747 ; 10.747 ; 10.747 ;
+; reset      ; IOports[4]  ; 11.235 ; 11.235 ; 11.235 ; 11.235 ;
+; reset      ; IOports[5]  ; 11.321 ; 11.321 ; 11.321 ; 11.321 ;
+; reset      ; IOports[6]  ; 10.767 ; 10.767 ; 10.767 ; 10.767 ;
+; reset      ; IOports[7]  ; 10.726 ; 10.726 ; 10.726 ; 10.726 ;
+; reset      ; empty       ; 16.817 ; 16.817 ; 16.817 ; 16.817 ;
+; reset      ; full        ; 16.495 ; 16.495 ; 16.495 ; 16.495 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------------+
+; Output Enable Times                                                     ;
++-------------+------------+--------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 36.804 ;      ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 36.804 ;      ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 37.598 ;      ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 37.393 ;      ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 37.040 ;      ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 37.528 ;      ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 37.614 ;      ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 37.060 ;      ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 37.019 ;      ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 36.804 ;      ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 36.804 ;      ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 37.598 ;      ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 37.393 ;      ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 37.040 ;      ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 37.528 ;      ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 37.614 ;      ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 37.060 ;      ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 37.019 ;      ; Fall       ; ReadWrite       ;
++-------------+------------+--------+------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Output Enable Times                                             ;
++-------------+------------+--------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 10.060 ;      ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 10.060 ;      ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 10.854 ;      ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 10.649 ;      ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 10.296 ;      ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 10.784 ;      ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 10.870 ;      ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 10.316 ;      ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 10.275 ;      ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 10.060 ;      ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 10.060 ;      ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 10.854 ;      ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 10.649 ;      ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 10.296 ;      ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 10.784 ;      ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 10.870 ;      ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 10.316 ;      ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 10.275 ;      ; Fall       ; ReadWrite       ;
++-------------+------------+--------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Output Disable Times                                                            ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 36.804    ;           ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 36.804    ;           ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 37.598    ;           ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 37.393    ;           ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 37.040    ;           ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 37.528    ;           ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 37.614    ;           ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 37.060    ;           ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 37.019    ;           ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 36.804    ;           ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 36.804    ;           ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 37.598    ;           ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 37.393    ;           ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 37.040    ;           ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 37.528    ;           ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 37.614    ;           ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 37.060    ;           ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 37.019    ;           ; Fall       ; ReadWrite       ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                    ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 10.060    ;           ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 10.060    ;           ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 10.854    ;           ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 10.649    ;           ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 10.296    ;           ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 10.784    ;           ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 10.870    ;           ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 10.316    ;           ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 10.275    ;           ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 10.060    ;           ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 10.060    ;           ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 10.854    ;           ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 10.649    ;           ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 10.296    ;           ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 10.784    ;           ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 10.870    ;           ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 10.316    ;           ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 10.275    ;           ; Fall       ; ReadWrite       ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-----------+--------+-------------------+
+; Clock     ; Slack  ; End Point TNS     ;
++-----------+--------+-------------------+
+; ReadWrite ; -7.302 ; -493545.678       ;
++-----------+--------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'ReadWrite'                                                                                                                                     ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock     ; Clock Edge ; Target                                                                                     ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------------------------------------------------------------------------------+
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[959]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|and0|combout                                   ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[0]|and0|combout                                   ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[5]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[5]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -7.302 ; -7.302       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[959]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[810]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|and0|combout                                   ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[0]|and0|combout                                   ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -7.300 ; -7.300       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[810]|MemoryCell_inst[7]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[0]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[1]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[2]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[3]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[4]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[5]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[6]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Fall       ; SRAM:SRAM_inst|word:word_inst[255]|MemoryCell:MemoryCell_inst[7]|D_latch:D_latch_inst|Qout ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|and0|combout                                   ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[0]|and0|combout                                   ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[1]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[2]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[3]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[4]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[5]|D_latch_inst|Qout|datac                        ;
+; -7.235 ; -7.235       ; 0.000          ; High Pulse Width ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
+; -7.235 ; -7.235       ; 0.000          ; Low Pulse Width  ; ReadWrite ; Rise       ; SRAM_inst|word_inst[255]|MemoryCell_inst[6]|D_latch_inst|Qout|datad                        ;
++--------+--------------+----------------+------------------+-----------+------------+--------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 3.717 ; 3.717 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 2.751 ; 2.751 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 3.717 ; 3.717 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 2.634 ; 2.634 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 3.261 ; 3.261 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 3.094 ; 3.094 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 2.742 ; 2.742 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 2.877 ; 2.877 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 2.662 ; 2.662 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 4.599 ; 4.599 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 3.455 ; 3.455 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 4.599 ; 4.599 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 3.329 ; 3.329 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 4.007 ; 4.007 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 3.645 ; 3.645 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 3.797 ; 3.797 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 3.612 ; 3.612 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 3.314 ; 3.314 ; Fall       ; ReadWrite       ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 7.192 ; 7.192 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 6.598 ; 6.598 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 6.238 ; 6.238 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 6.483 ; 6.483 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 6.916 ; 6.916 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 7.192 ; 7.192 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.327 ; 6.327 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 6.826 ; 6.826 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 6.961 ; 6.961 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 7.202 ; 7.202 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 6.505 ; 6.505 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 6.258 ; 6.258 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 6.636 ; 6.636 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 6.841 ; 6.841 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.993 ; 6.993 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.746 ; 6.746 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 6.800 ; 6.800 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 7.202 ; 7.202 ; Fall       ; ReadWrite       ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 19.835 ; 19.835 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 17.653 ; 17.653 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 17.769 ; 17.769 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 17.248 ; 17.248 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 19.144 ; 19.144 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 18.007 ; 18.007 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 19.835 ; 19.835 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 18.734 ; 18.734 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 18.766 ; 18.766 ; Rise       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 8.813  ; 8.813  ; Rise       ; ReadWrite       ;
+; full        ; ReadWrite  ; 8.643  ; 8.643  ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 19.416 ; 19.416 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 17.824 ; 17.824 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 17.395 ; 17.395 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 17.260 ; 17.260 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 18.773 ; 18.773 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 17.785 ; 17.785 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 19.416 ; 19.416 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 18.606 ; 18.606 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 19.185 ; 19.185 ; Fall       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 8.813  ; 8.813  ; Fall       ; ReadWrite       ;
+; full        ; ReadWrite  ; 8.643  ; 8.643  ; Fall       ; ReadWrite       ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 5.825 ; 5.825 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.825 ; 5.825 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.939 ; 5.939 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 6.117 ; 6.117 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.902 ; 5.902 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.285 ; 6.285 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.949 ; 6.949 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 6.041 ; 6.041 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.887 ; 5.887 ; Rise       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 8.394 ; 8.394 ; Rise       ; ReadWrite       ;
+; full        ; ReadWrite  ; 8.224 ; 8.224 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 5.393 ; 5.393 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.393 ; 5.393 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.629 ; 5.629 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.921 ; 5.921 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.672 ; 5.672 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.084 ; 6.084 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.745 ; 6.745 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 5.871 ; 5.871 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.631 ; 5.631 ; Fall       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 8.394 ; 8.394 ; Fall       ; ReadWrite       ;
+; full        ; ReadWrite  ; 8.224 ; 8.224 ; Fall       ; ReadWrite       ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; clk        ; IOports[0]  ; 17.769 ; 17.769 ; 17.769 ; 17.769 ;
+; clk        ; IOports[1]  ; 18.142 ; 18.142 ; 18.142 ; 18.142 ;
+; clk        ; IOports[2]  ; 18.093 ; 18.093 ; 18.093 ; 18.093 ;
+; clk        ; IOports[3]  ; 18.033 ; 18.033 ; 18.033 ; 18.033 ;
+; clk        ; IOports[4]  ; 18.104 ; 18.104 ; 18.104 ; 18.104 ;
+; clk        ; IOports[5]  ; 19.799 ; 19.799 ; 19.799 ; 19.799 ;
+; clk        ; IOports[6]  ; 18.410 ; 18.410 ; 18.410 ; 18.410 ;
+; clk        ; IOports[7]  ; 18.660 ; 18.660 ; 18.660 ; 18.660 ;
+; clk        ; empty       ; 9.251  ; 9.251  ; 9.251  ; 9.251  ;
+; clk        ; full        ; 9.081  ; 9.081  ; 9.081  ; 9.081  ;
+; en         ; IOports[0]  ; 19.981 ; 19.981 ; 19.981 ; 19.981 ;
+; en         ; IOports[1]  ; 20.354 ; 20.354 ; 20.354 ; 20.354 ;
+; en         ; IOports[2]  ; 20.305 ; 20.305 ; 20.305 ; 20.305 ;
+; en         ; IOports[3]  ; 20.245 ; 20.245 ; 20.245 ; 20.245 ;
+; en         ; IOports[4]  ; 20.316 ; 20.316 ; 20.316 ; 20.316 ;
+; en         ; IOports[5]  ; 22.011 ; 22.011 ; 22.011 ; 22.011 ;
+; en         ; IOports[6]  ; 20.622 ; 20.622 ; 20.622 ; 20.622 ;
+; en         ; IOports[7]  ; 20.872 ; 20.872 ; 20.872 ; 20.872 ;
+; en         ; empty       ; 11.463 ; 11.463 ; 11.463 ; 11.463 ;
+; en         ; full        ; 11.293 ; 11.293 ; 11.293 ; 11.293 ;
+; reset      ; IOports[0]  ; 17.572 ; 17.572 ; 17.572 ; 17.572 ;
+; reset      ; IOports[1]  ; 17.945 ; 17.945 ; 17.945 ; 17.945 ;
+; reset      ; IOports[2]  ; 17.896 ; 17.896 ; 17.896 ; 17.896 ;
+; reset      ; IOports[3]  ; 17.836 ; 17.836 ; 17.836 ; 17.836 ;
+; reset      ; IOports[4]  ; 17.907 ; 17.907 ; 17.907 ; 17.907 ;
+; reset      ; IOports[5]  ; 19.602 ; 19.602 ; 19.602 ; 19.602 ;
+; reset      ; IOports[6]  ; 18.213 ; 18.213 ; 18.213 ; 18.213 ;
+; reset      ; IOports[7]  ; 18.463 ; 18.463 ; 18.463 ; 18.463 ;
+; reset      ; empty       ; 9.054  ; 9.054  ; 9.054  ; 9.054  ;
+; reset      ; full        ; 8.884  ; 8.884  ; 8.884  ; 8.884  ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; clk        ; IOports[0]  ; 5.422  ; 5.422  ; 5.422  ; 5.422  ;
+; clk        ; IOports[1]  ; 5.795  ; 5.795  ; 5.795  ; 5.795  ;
+; clk        ; IOports[2]  ; 5.746  ; 5.746  ; 5.746  ; 5.746  ;
+; clk        ; IOports[3]  ; 5.529  ; 5.529  ; 5.529  ; 5.529  ;
+; clk        ; IOports[4]  ; 5.757  ; 5.757  ; 5.757  ; 5.757  ;
+; clk        ; IOports[5]  ; 5.810  ; 5.810  ; 5.810  ; 5.810  ;
+; clk        ; IOports[6]  ; 5.549  ; 5.549  ; 5.549  ; 5.549  ;
+; clk        ; IOports[7]  ; 5.509  ; 5.509  ; 5.509  ; 5.509  ;
+; clk        ; empty       ; 8.083  ; 8.083  ; 8.083  ; 8.083  ;
+; clk        ; full        ; 7.913  ; 7.913  ; 7.913  ; 7.913  ;
+; en         ; IOports[0]  ; 7.673  ; 7.673  ; 7.673  ; 7.673  ;
+; en         ; IOports[1]  ; 8.046  ; 8.046  ; 8.046  ; 8.046  ;
+; en         ; IOports[2]  ; 7.997  ; 7.997  ; 7.997  ; 7.997  ;
+; en         ; IOports[3]  ; 7.780  ; 7.780  ; 7.780  ; 7.780  ;
+; en         ; IOports[4]  ; 8.008  ; 8.008  ; 8.008  ; 8.008  ;
+; en         ; IOports[5]  ; 8.061  ; 8.061  ; 8.061  ; 8.061  ;
+; en         ; IOports[6]  ; 7.800  ; 7.800  ; 7.800  ; 7.800  ;
+; en         ; IOports[7]  ; 7.760  ; 7.760  ; 7.760  ; 7.760  ;
+; en         ; empty       ; 10.915 ; 10.915 ; 10.915 ; 10.915 ;
+; en         ; full        ; 10.745 ; 10.745 ; 10.745 ; 10.745 ;
+; reset      ; IOports[0]  ; 5.264  ; 5.264  ; 5.264  ; 5.264  ;
+; reset      ; IOports[1]  ; 5.637  ; 5.637  ; 5.637  ; 5.637  ;
+; reset      ; IOports[2]  ; 5.588  ; 5.588  ; 5.588  ; 5.588  ;
+; reset      ; IOports[3]  ; 5.371  ; 5.371  ; 5.371  ; 5.371  ;
+; reset      ; IOports[4]  ; 5.599  ; 5.599  ; 5.599  ; 5.599  ;
+; reset      ; IOports[5]  ; 5.652  ; 5.652  ; 5.652  ; 5.652  ;
+; reset      ; IOports[6]  ; 5.391  ; 5.391  ; 5.391  ; 5.391  ;
+; reset      ; IOports[7]  ; 5.351  ; 5.351  ; 5.351  ; 5.351  ;
+; reset      ; empty       ; 8.088  ; 8.088  ; 8.088  ; 8.088  ;
+; reset      ; full        ; 7.918  ; 7.918  ; 7.918  ; 7.918  ;
++------------+-------------+--------+--------+--------+--------+
+
+
++-------------------------------------------------------------------------+
+; Output Enable Times                                                     ;
++-------------+------------+--------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 17.331 ;      ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 17.331 ;      ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 17.704 ;      ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 17.655 ;      ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 17.438 ;      ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 17.666 ;      ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 17.719 ;      ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 17.458 ;      ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 17.418 ;      ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 17.331 ;      ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 17.331 ;      ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 17.704 ;      ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 17.655 ;      ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 17.438 ;      ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 17.666 ;      ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 17.719 ;      ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 17.458 ;      ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 17.418 ;      ; Fall       ; ReadWrite       ;
++-------------+------------+--------+------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Output Enable Times                                            ;
++-------------+------------+-------+------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 5.023 ;      ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.023 ;      ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.396 ;      ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.347 ;      ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.130 ;      ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 5.358 ;      ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 5.411 ;      ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 5.150 ;      ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.110 ;      ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 5.023 ;      ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.023 ;      ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.396 ;      ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.347 ;      ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.130 ;      ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 5.358 ;      ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 5.411 ;      ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 5.150 ;      ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.110 ;      ; Fall       ; ReadWrite       ;
++-------------+------------+-------+------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Output Disable Times                                                            ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 17.331    ;           ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 17.331    ;           ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 17.704    ;           ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 17.655    ;           ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 17.438    ;           ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 17.666    ;           ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 17.719    ;           ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 17.458    ;           ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 17.418    ;           ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 17.331    ;           ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 17.331    ;           ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 17.704    ;           ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 17.655    ;           ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 17.438    ;           ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 17.666    ;           ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 17.719    ;           ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 17.458    ;           ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 17.418    ;           ; Fall       ; ReadWrite       ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Minimum Output Disable Times                                                    ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; Data Port   ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
++-------------+------------+-----------+-----------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 5.023     ;           ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.023     ;           ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.396     ;           ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.347     ;           ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.130     ;           ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 5.358     ;           ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 5.411     ;           ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 5.150     ;           ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.110     ;           ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 5.023     ;           ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.023     ;           ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.396     ;           ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.347     ;           ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.130     ;           ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 5.358     ;           ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 5.411     ;           ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 5.150     ;           ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.110     ;           ; Fall       ; ReadWrite       ;
++-------------+------------+-----------+-----------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -16.473             ;
+;  ReadWrite       ; N/A   ; N/A  ; N/A      ; N/A     ; -16.473             ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -1136044.892        ;
+;  ReadWrite       ; N/A   ; N/A  ; N/A      ; N/A     ; -1136044.892        ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 6.418 ; 6.418 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 4.600 ; 4.600 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 6.418 ; 6.418 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 4.227 ; 4.227 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.532 ; 5.532 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 5.161 ; 5.161 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 4.413 ; 4.413 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 4.610 ; 4.610 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 4.289 ; 4.289 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 8.405 ; 8.405 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 6.201 ; 6.201 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 8.405 ; 8.405 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.812 ; 5.812 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 7.204 ; 7.204 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.429 ; 6.429 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.685 ; 6.685 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 6.409 ; 6.409 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.974 ; 5.974 ; Fall       ; ReadWrite       ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Hold Times                                                                ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 16.941 ; 16.941 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 15.678 ; 15.678 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 14.521 ; 14.521 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 14.796 ; 14.796 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 16.294 ; 16.294 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 16.941 ; 16.941 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 15.265 ; 15.265 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 15.841 ; 15.841 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 15.866 ; 15.866 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 16.679 ; 16.679 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 15.246 ; 15.246 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 14.489 ; 14.489 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 15.151 ; 15.151 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 15.568 ; 15.568 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 16.001 ; 16.001 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 15.428 ; 15.428 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 15.476 ; 15.476 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 16.679 ; 16.679 ; Fall       ; ReadWrite       ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 41.929 ; 41.929 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 36.637 ; 36.637 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 37.691 ; 37.691 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 36.173 ; 36.173 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 40.211 ; 40.211 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 38.236 ; 38.236 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 41.929 ; 41.929 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 39.341 ; 39.341 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 40.059 ; 40.059 ; Rise       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 18.226 ; 18.226 ; Rise       ; ReadWrite       ;
+; full        ; ReadWrite  ; 17.904 ; 17.904 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 40.999 ; 40.999 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 37.545 ; 37.545 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 36.810 ; 36.810 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 35.917 ; 35.917 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 39.545 ; 39.545 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 37.563 ; 37.563 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 40.989 ; 40.989 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 39.021 ; 39.021 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 40.999 ; 40.999 ; Fall       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 18.226 ; 18.226 ; Fall       ; ReadWrite       ;
+; full        ; ReadWrite  ; 17.904 ; 17.904 ; Fall       ; ReadWrite       ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; IOports[*]  ; ReadWrite  ; 5.825 ; 5.825 ; Rise       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.825 ; 5.825 ; Rise       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.939 ; 5.939 ; Rise       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 6.117 ; 6.117 ; Rise       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.902 ; 5.902 ; Rise       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.285 ; 6.285 ; Rise       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.949 ; 6.949 ; Rise       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 6.041 ; 6.041 ; Rise       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.887 ; 5.887 ; Rise       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 8.394 ; 8.394 ; Rise       ; ReadWrite       ;
+; full        ; ReadWrite  ; 8.224 ; 8.224 ; Rise       ; ReadWrite       ;
+; IOports[*]  ; ReadWrite  ; 5.393 ; 5.393 ; Fall       ; ReadWrite       ;
+;  IOports[0] ; ReadWrite  ; 5.393 ; 5.393 ; Fall       ; ReadWrite       ;
+;  IOports[1] ; ReadWrite  ; 5.629 ; 5.629 ; Fall       ; ReadWrite       ;
+;  IOports[2] ; ReadWrite  ; 5.921 ; 5.921 ; Fall       ; ReadWrite       ;
+;  IOports[3] ; ReadWrite  ; 5.672 ; 5.672 ; Fall       ; ReadWrite       ;
+;  IOports[4] ; ReadWrite  ; 6.084 ; 6.084 ; Fall       ; ReadWrite       ;
+;  IOports[5] ; ReadWrite  ; 6.745 ; 6.745 ; Fall       ; ReadWrite       ;
+;  IOports[6] ; ReadWrite  ; 5.871 ; 5.871 ; Fall       ; ReadWrite       ;
+;  IOports[7] ; ReadWrite  ; 5.631 ; 5.631 ; Fall       ; ReadWrite       ;
+; empty       ; ReadWrite  ; 8.394 ; 8.394 ; Fall       ; ReadWrite       ;
+; full        ; ReadWrite  ; 8.224 ; 8.224 ; Fall       ; ReadWrite       ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; clk        ; IOports[0]  ; 37.607 ; 37.607 ; 37.607 ; 37.607 ;
+; clk        ; IOports[1]  ; 38.401 ; 38.401 ; 38.401 ; 38.401 ;
+; clk        ; IOports[2]  ; 38.196 ; 38.196 ; 38.196 ; 38.196 ;
+; clk        ; IOports[3]  ; 37.843 ; 37.843 ; 37.843 ; 37.843 ;
+; clk        ; IOports[4]  ; 38.331 ; 38.331 ; 38.331 ; 38.331 ;
+; clk        ; IOports[5]  ; 41.518 ; 41.518 ; 41.518 ; 41.518 ;
+; clk        ; IOports[6]  ; 38.707 ; 38.707 ; 38.707 ; 38.707 ;
+; clk        ; IOports[7]  ; 39.397 ; 39.397 ; 39.397 ; 39.397 ;
+; clk        ; empty       ; 19.029 ; 19.029 ; 19.029 ; 19.029 ;
+; clk        ; full        ; 18.707 ; 18.707 ; 18.707 ; 18.707 ;
+; en         ; IOports[0]  ; 41.263 ; 41.263 ; 41.263 ; 41.263 ;
+; en         ; IOports[1]  ; 42.057 ; 42.057 ; 42.057 ; 42.057 ;
+; en         ; IOports[2]  ; 41.852 ; 41.852 ; 41.852 ; 41.852 ;
+; en         ; IOports[3]  ; 41.499 ; 41.499 ; 41.499 ; 41.499 ;
+; en         ; IOports[4]  ; 41.987 ; 41.987 ; 41.987 ; 41.987 ;
+; en         ; IOports[5]  ; 45.174 ; 45.174 ; 45.174 ; 45.174 ;
+; en         ; IOports[6]  ; 42.363 ; 42.363 ; 42.363 ; 42.363 ;
+; en         ; IOports[7]  ; 43.053 ; 43.053 ; 43.053 ; 43.053 ;
+; en         ; empty       ; 22.685 ; 22.685 ; 22.685 ; 22.685 ;
+; en         ; full        ; 22.363 ; 22.363 ; 22.363 ; 22.363 ;
+; reset      ; IOports[0]  ; 37.255 ; 37.255 ; 37.255 ; 37.255 ;
+; reset      ; IOports[1]  ; 38.049 ; 38.049 ; 38.049 ; 38.049 ;
+; reset      ; IOports[2]  ; 37.844 ; 37.844 ; 37.844 ; 37.844 ;
+; reset      ; IOports[3]  ; 37.491 ; 37.491 ; 37.491 ; 37.491 ;
+; reset      ; IOports[4]  ; 37.979 ; 37.979 ; 37.979 ; 37.979 ;
+; reset      ; IOports[5]  ; 41.166 ; 41.166 ; 41.166 ; 41.166 ;
+; reset      ; IOports[6]  ; 38.355 ; 38.355 ; 38.355 ; 38.355 ;
+; reset      ; IOports[7]  ; 39.045 ; 39.045 ; 39.045 ; 39.045 ;
+; reset      ; empty       ; 18.677 ; 18.677 ; 18.677 ; 18.677 ;
+; reset      ; full        ; 18.355 ; 18.355 ; 18.355 ; 18.355 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Progagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; clk        ; IOports[0]  ; 5.422  ; 5.422  ; 5.422  ; 5.422  ;
+; clk        ; IOports[1]  ; 5.795  ; 5.795  ; 5.795  ; 5.795  ;
+; clk        ; IOports[2]  ; 5.746  ; 5.746  ; 5.746  ; 5.746  ;
+; clk        ; IOports[3]  ; 5.529  ; 5.529  ; 5.529  ; 5.529  ;
+; clk        ; IOports[4]  ; 5.757  ; 5.757  ; 5.757  ; 5.757  ;
+; clk        ; IOports[5]  ; 5.810  ; 5.810  ; 5.810  ; 5.810  ;
+; clk        ; IOports[6]  ; 5.549  ; 5.549  ; 5.549  ; 5.549  ;
+; clk        ; IOports[7]  ; 5.509  ; 5.509  ; 5.509  ; 5.509  ;
+; clk        ; empty       ; 8.083  ; 8.083  ; 8.083  ; 8.083  ;
+; clk        ; full        ; 7.913  ; 7.913  ; 7.913  ; 7.913  ;
+; en         ; IOports[0]  ; 7.673  ; 7.673  ; 7.673  ; 7.673  ;
+; en         ; IOports[1]  ; 8.046  ; 8.046  ; 8.046  ; 8.046  ;
+; en         ; IOports[2]  ; 7.997  ; 7.997  ; 7.997  ; 7.997  ;
+; en         ; IOports[3]  ; 7.780  ; 7.780  ; 7.780  ; 7.780  ;
+; en         ; IOports[4]  ; 8.008  ; 8.008  ; 8.008  ; 8.008  ;
+; en         ; IOports[5]  ; 8.061  ; 8.061  ; 8.061  ; 8.061  ;
+; en         ; IOports[6]  ; 7.800  ; 7.800  ; 7.800  ; 7.800  ;
+; en         ; IOports[7]  ; 7.760  ; 7.760  ; 7.760  ; 7.760  ;
+; en         ; empty       ; 10.915 ; 10.915 ; 10.915 ; 10.915 ;
+; en         ; full        ; 10.745 ; 10.745 ; 10.745 ; 10.745 ;
+; reset      ; IOports[0]  ; 5.264  ; 5.264  ; 5.264  ; 5.264  ;
+; reset      ; IOports[1]  ; 5.637  ; 5.637  ; 5.637  ; 5.637  ;
+; reset      ; IOports[2]  ; 5.588  ; 5.588  ; 5.588  ; 5.588  ;
+; reset      ; IOports[3]  ; 5.371  ; 5.371  ; 5.371  ; 5.371  ;
+; reset      ; IOports[4]  ; 5.599  ; 5.599  ; 5.599  ; 5.599  ;
+; reset      ; IOports[5]  ; 5.652  ; 5.652  ; 5.652  ; 5.652  ;
+; reset      ; IOports[6]  ; 5.391  ; 5.391  ; 5.391  ; 5.391  ;
+; reset      ; IOports[7]  ; 5.351  ; 5.351  ; 5.351  ; 5.351  ;
+; reset      ; empty       ; 8.088  ; 8.088  ; 8.088  ; 8.088  ;
+; reset      ; full        ; 7.918  ; 7.918  ; 7.918  ; 7.918  ;
++------------+-------------+--------+--------+--------+--------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 12    ; 12   ;
+; Unconstrained Input Port Paths  ; 8298  ; 8298 ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 8452  ; 8452 ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Oct 28 10:45:40 2020
+Info: Command: quartus_sta Queue7_24 -c Queue7_24
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (335093): TimeQuest Timing Analyzer is analyzing 8214 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Queue7_24.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name ReadWrite ReadWrite
+Warning (332125): Found combinational loop of 358 nodes
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|xor0~0|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|xor0~0|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~0|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~0|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0|combout"
+    Warning (332126): Node "and0|datab"
+    Warning (332126): Node "and0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3~0|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand4|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand4|combout"
+    Warning (332126): Node "Counter_front|HAS_inst[2]|and1|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[2]|and1|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand4|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand4|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand4|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~3|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~3|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~8|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~8|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|xor0|datac"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|xor0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand3~0|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand4|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand4|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~7|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~7|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~8|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~6|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~6|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~8|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~7|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[5]|nand4|dataa"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|xor0|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|and1|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|and1|combout"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|xor0|datad"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|xor0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand3~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand4|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~2|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~2|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0|datad"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|xor0|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[8]|nand4|datac"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|and1|dataa"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|and1|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand4|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand4|combout"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[9]|xor0~0|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[9]|xor0~0|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~2|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand3|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand4|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand4|combout"
+    Warning (332126): Node "and0|dataa"
+    Warning (332126): Node "and2|datad"
+    Warning (332126): Node "and2|combout"
+    Warning (332126): Node "Counter_front|HAS_inst[1]|and1|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[1]|and1|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand3|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand4|combout"
+    Warning (332126): Node "Counter_front|HAS_inst[2]|and1|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~1|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~1|combout"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~2|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~2|combout"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~3|datad"
+    Warning (332126): Node "Comparator_inst|WideOr0~4|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~4|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~5|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~5|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~8|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand4|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand3|datab"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[2]|or0~0|datab"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[2]|or0~0|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~0|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand3~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[2]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand4|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand4|combout"
+    Warning (332126): Node "Counter_front|HAS_inst[2]|and1|dataa"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~0|datab"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~0|combout"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~1|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~4|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[1]|or0~0|dataa"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[1]|or0~0|combout"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[2]|or0~0|dataa"
+    Warning (332126): Node "Counter_front|HAS_inst[1]|and1|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand4|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand3|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand3~0|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[0]|nand3|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand4|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3|dataa"
+    Warning (332126): Node "and3|datad"
+    Warning (332126): Node "and3|combout"
+    Warning (332126): Node "and1|datab"
+    Warning (332126): Node "and1|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand4|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|and1|dataa"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|and1|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|xor0|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|xor0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand3|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand4|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|and1|datab"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|and1|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|and1|datac"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|and1|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3~0|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand4|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand4|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand4|dataa"
+    Warning (332126): Node "and2|datac"
+    Warning (332126): Node "and3|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3|datad"
+    Warning (332126): Node "and0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand4|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand4|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand4|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[9]|xor0~0|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand3|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[10]|nand3|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand3~0|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[9]|nand3|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand4|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand4|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand4|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~3|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~3|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0|dataa"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[7]|xor0~0|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[7]|xor0~0|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~7|datab"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|xor0|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|xor0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand3|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand4|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|and1|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand4|datac"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|xor0|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~2|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand3~0|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[8]|nand3|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~1|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~1|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~2|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3|datac"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|and1|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3~0|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|xor0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand4|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|and1|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand4|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand3|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~3|datad"
+    Warning (332126): Node "Comparator_inst|WideOr0~6|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[8]|xor0|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~1|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[7]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand3~0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[6]|nand3|datad"
+    Warning (332126): Node "Comparator_inst|WideOr0~7|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand4|dataa"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|xor0|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~6|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand3~0|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[5]|nand3|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand4|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand4|combout"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|xor0~0|datab"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|and1|datac"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|xor0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand4|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3~0|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand3|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand4|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|and1|dataa"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|xor0|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[4]|nand3|dataa"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~2|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand4|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand3|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand3~0|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[3]|nand3|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[5]|and1|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~0|datad"
+    Warning (332126): Node "Comparator_inst|WideOr0~5|dataa"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[1]|or0~0|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand4|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3|dataa"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|xor0|dataa"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|xor0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand3|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand4|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|and1|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~1|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~4|dataa"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand4|datac"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|xor0|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[2]|or0~0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand3~0|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[2]|nand3|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3~0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3|datad"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand3|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand3|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand4|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand4|combout"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|and1|datab"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~0|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~4|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[1]|or0~0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[1]|nand3|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand4|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand3|datac"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|xor0|datab"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand3~0|datac"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand3~0|combout"
+    Warning (332126): Node "Counter_back|D_ff_inst[0]|nand3|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|xor0|datad"
+    Warning (332126): Node "Counter_back|HAS_inst[2]|and1|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand3~0|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[9]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[10]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand3|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand4|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~3|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~6|datab"
+    Warning (332126): Node "Comparator_inst|WideOr0~1|datac"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|xor0|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|and1|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand4|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand4|combout"
+    Warning (332126): Node "Comparator_inst|WideOr0~3|dataa"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[7]|xor0~0|datac"
+    Warning (332126): Node "Comparator_inst|WideOr0~1|dataa"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|xor0|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand4|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3|datac"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|and1|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3~0|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand3~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[6]|nand3|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[7]|nand3|datad"
+    Warning (332126): Node "Counter_front|HAS_inst[8]|and1|datad"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|and1|datac"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand4|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~2|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~0|dataa"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|and1|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand4|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand3|datac"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|xor0|dataa"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand3~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand3~0|combout"
+    Warning (332126): Node "Counter_front|D_ff_inst[3]|nand3|dataa"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|xor0|datad"
+    Warning (332126): Node "Counter_front|HAS_inst[5]|and1|datad"
+    Warning (332126): Node "Counter_front|D_ff_inst[4]|nand3|datad"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[4]|or0~0|dataa"
+    Warning (332126): Node "Comparator_inst|WideOr0~5|datac"
+    Warning (332126): Node "Comparator_inst|FAS_inst|FullAdder_inst[1]|or0~0|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand4|datab"
+    Warning (332126): Node "Counter_front|D_ff_inst[1]|nand3|datab"
+    Warning (332126): Node "Counter_front|HAS_inst[1]|and1|datac"
+    Warning (332126): Node "Counter_front|HAS_inst[2]|and1|datad"
+    Warning (332126): Node "and2|datab"
+    Warning (332126): Node "and3|datab"
+Critical Warning (332081): Design contains combinational loop of 358 nodes. Estimating the delays through the loop.
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): From: Counter_front|D_ff_inst[0]|nand3|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): From: Counter_front|HAS_inst[1]|and1|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): From: and0|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): From: and1|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[0]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[0]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[1]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[1]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[2]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[2]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[3]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[3]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[4]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[4]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[5]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[5]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[6]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[6]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[7]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[7]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[8]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[8]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[9]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[9]|or1~0  from: datad  to: combout
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -16.473
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -16.473  -1136044.892 ReadWrite 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): From: Counter_front|D_ff_inst[0]|nand3|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): From: Counter_front|HAS_inst[1]|and1|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): From: and0|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): From: and1|datad  to: Counter_front|D_ff_inst[7]|nand4|combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[0]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[0]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[1]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[1]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[2]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[2]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[3]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[3]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[4]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[4]|or1~0  from: datad  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[5]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[5]|or1~0  from: datac  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[6]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[6]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[7]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[7]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[8]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[8]|or1~0  from: datab  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[9]|or1~0  from: dataa  to: combout
+    Info (332098): Cell: selector_inst|mux2_1_inst[9]|or1~0  from: datad  to: combout
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -7.302
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -7.302   -493545.678 ReadWrite 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 365 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Wed Oct 28 10:45:47 2020
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+

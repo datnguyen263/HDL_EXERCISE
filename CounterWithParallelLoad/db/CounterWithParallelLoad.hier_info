@@ -1,0 +1,367 @@
+|CounterWithParallelLoad
+OUT[0] <= D_ff:D_ff_inst[0].Qout
+OUT[1] <= D_ff:D_ff_inst[1].Qout
+OUT[2] <= D_ff:D_ff_inst[2].Qout
+OUT[3] <= D_ff:D_ff_inst[3].Qout
+OUT[4] <= D_ff:D_ff_inst[4].Qout
+OUT[5] <= D_ff:D_ff_inst[5].Qout
+OUT[6] <= D_ff:D_ff_inst[6].Qout
+OUT[7] <= D_ff:D_ff_inst[7].Qout
+OUT[8] <= D_ff:D_ff_inst[8].Qout
+OUT[9] <= D_ff:D_ff_inst[9].Qout
+OUT[10] <= D_ff:D_ff_inst[10].Qout
+clk => D_ff:D_ff_inst[0].clk
+clk => D_ff:D_ff_inst[1].clk
+clk => D_ff:D_ff_inst[2].clk
+clk => D_ff:D_ff_inst[3].clk
+clk => D_ff:D_ff_inst[4].clk
+clk => D_ff:D_ff_inst[5].clk
+clk => D_ff:D_ff_inst[6].clk
+clk => D_ff:D_ff_inst[7].clk
+clk => D_ff:D_ff_inst[8].clk
+clk => D_ff:D_ff_inst[9].clk
+clk => D_ff:D_ff_inst[10].clk
+load => mux2_1:mux_inst[0].sel
+load => mux2_1:mux_inst[1].sel
+load => mux2_1:mux_inst[2].sel
+load => mux2_1:mux_inst[3].sel
+load => mux2_1:mux_inst[4].sel
+load => mux2_1:mux_inst[5].sel
+load => mux2_1:mux_inst[6].sel
+load => mux2_1:mux_inst[7].sel
+load => mux2_1:mux_inst[8].sel
+load => mux2_1:mux_inst[9].sel
+load => mux2_1:mux_inst[10].sel
+En => HAS:HAS_inst[0].b
+D => HAS:HAS_inst[0].D
+D => HAS:HAS_inst[1].D
+D => HAS:HAS_inst[2].D
+D => HAS:HAS_inst[3].D
+D => HAS:HAS_inst[4].D
+D => HAS:HAS_inst[5].D
+D => HAS:HAS_inst[6].D
+D => HAS:HAS_inst[7].D
+D => HAS:HAS_inst[8].D
+D => HAS:HAS_inst[9].D
+D => HAS:HAS_inst[10].D
+value[0] => mux2_1:mux_inst[0].I1
+value[1] => mux2_1:mux_inst[1].I1
+value[2] => mux2_1:mux_inst[2].I1
+value[3] => mux2_1:mux_inst[3].I1
+value[4] => mux2_1:mux_inst[4].I1
+value[5] => mux2_1:mux_inst[5].I1
+value[6] => mux2_1:mux_inst[6].I1
+value[7] => mux2_1:mux_inst[7].I1
+value[8] => mux2_1:mux_inst[8].I1
+value[9] => mux2_1:mux_inst[9].I1
+value[10] => mux2_1:mux_inst[10].I1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[0]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[1]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[2]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[3]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[4]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[5]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[6]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[7]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[8]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[9]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|HAS:HAS_inst[10]
+out <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+carry_bit <= or0.DB_MAX_OUTPUT_PORT_TYPE
+D => and0.IN0
+D => and1.IN0
+a => and1.IN1
+a => xor0.IN0
+a => and0.IN1
+b => and0.IN2
+b => and1.IN2
+b => xor0.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[0]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[1]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[2]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[3]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[4]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[5]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[6]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[7]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[8]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[9]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|mux2_1:mux_inst[10]
+mux_out <= or0.DB_MAX_OUTPUT_PORT_TYPE
+sel => and1.IN0
+sel => and0.IN0
+I0 => and0.IN1
+I1 => and1.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[0]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[1]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[2]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[3]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[4]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[5]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[6]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[7]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[8]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[9]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+
+|CounterWithParallelLoad|D_ff:D_ff_inst[10]
+Qout <= Qout.DB_MAX_OUTPUT_PORT_TYPE
+clk => nand1.IN1
+clk => nand2.IN0
+Din => nand3.IN1
+
+

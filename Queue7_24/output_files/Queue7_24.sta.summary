@@ -1,0 +1,13 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Minimum Pulse Width 'ReadWrite'
+Slack : -16.473
+TNS   : -1136044.892
+
+Type  : Fast Model Minimum Pulse Width 'ReadWrite'
+Slack : -7.302
+TNS   : -493545.678
+
+------------------------------------------------------------

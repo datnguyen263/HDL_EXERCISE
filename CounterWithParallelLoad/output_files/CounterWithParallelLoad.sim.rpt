@@ -1,0 +1,356 @@
+Simulator report for CounterWithParallelLoad
+Mon Nov 23 16:04:09 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 166 nodes    ;
+; Simulation Coverage         ;      83.13 % ;
+; Total Number of Transitions ; 3355         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                         ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                            ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                             ;               ;
+; Vector input source                                                                        ; E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad_Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                              ; On            ;
+; Check outputs                                                                              ; Off                                                                                             ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                             ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                            ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      83.13 % ;
+; Total nodes checked                                 ; 166          ;
+; Total output ports checked                          ; 166          ;
+; Total output ports with complete 1/0-value coverage ; 138          ;
+; Total output ports with no 1/0-value coverage       ; 28           ;
+; Total output ports with no 1-value coverage         ; 28           ;
+; Total output ports with no 0-value coverage         ; 28           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |CounterWithParallelLoad|OUT[0]                   ; |CounterWithParallelLoad|OUT[0]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[1]                   ; |CounterWithParallelLoad|OUT[1]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[2]                   ; |CounterWithParallelLoad|OUT[2]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[3]                   ; |CounterWithParallelLoad|OUT[3]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[4]                   ; |CounterWithParallelLoad|OUT[4]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[5]                   ; |CounterWithParallelLoad|OUT[5]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[6]                   ; |CounterWithParallelLoad|OUT[6]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[7]                   ; |CounterWithParallelLoad|OUT[7]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[8]                   ; |CounterWithParallelLoad|OUT[8]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[9]                   ; |CounterWithParallelLoad|OUT[9]                   ; pin_out          ;
+; |CounterWithParallelLoad|OUT[10]                  ; |CounterWithParallelLoad|OUT[10]                  ; pin_out          ;
+; |CounterWithParallelLoad|clk                      ; |CounterWithParallelLoad|clk                      ; out              ;
+; |CounterWithParallelLoad|load                     ; |CounterWithParallelLoad|load                     ; out              ;
+; |CounterWithParallelLoad|value[0]                 ; |CounterWithParallelLoad|value[0]                 ; out              ;
+; |CounterWithParallelLoad|value[1]                 ; |CounterWithParallelLoad|value[1]                 ; out              ;
+; |CounterWithParallelLoad|value[2]                 ; |CounterWithParallelLoad|value[2]                 ; out              ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand0 ; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand0 ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand1 ; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand1 ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand2 ; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand2 ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand3 ; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand3 ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand4 ; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand4 ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand5 ; |CounterWithParallelLoad|D_ff:D_ff_inst[10]|nand5 ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[9]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[8]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[7]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[6]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[5]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[4]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[3]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[2]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[1]|nand5  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand0  ; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand0  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand1  ; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand1  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand2  ; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand2  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand3  ; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand3  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand4  ; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand4  ; out0             ;
+; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand5  ; |CounterWithParallelLoad|D_ff:D_ff_inst[0]|nand5  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[10]|and0 ; |CounterWithParallelLoad|mux2_1:mux_inst[10]|and0 ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[10]|or0  ; |CounterWithParallelLoad|mux2_1:mux_inst[10]|or0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[9]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[9]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[9]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[9]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[8]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[8]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[8]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[8]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[7]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[7]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[7]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[7]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[6]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[6]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[6]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[6]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[5]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[5]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[5]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[5]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[4]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[4]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[4]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[4]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[3]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[3]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[3]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[3]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[2]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[2]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[2]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[2]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[2]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[2]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[1]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[1]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[1]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[1]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[1]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[1]|or0   ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[0]|and0  ; |CounterWithParallelLoad|mux2_1:mux_inst[0]|and0  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[0]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[0]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[0]|or0   ; |CounterWithParallelLoad|mux2_1:mux_inst[0]|or0   ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[10]|xor0    ; |CounterWithParallelLoad|HAS:HAS_inst[10]|xor0    ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[9]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[9]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[9]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[9]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[9]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[9]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[8]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[8]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[8]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[8]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[8]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[8]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[7]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[7]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[7]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[7]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[7]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[7]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[6]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[6]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[6]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[6]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[6]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[6]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[5]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[5]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[5]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[5]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[5]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[5]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[4]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[4]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[4]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[4]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[4]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[4]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[3]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[3]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[3]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[3]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[3]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[3]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[2]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[2]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[2]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[2]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[2]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[2]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[1]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[1]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[1]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[1]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[1]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[1]|xor0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[0]|and0     ; |CounterWithParallelLoad|HAS:HAS_inst[0]|and0     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[0]|or0      ; |CounterWithParallelLoad|HAS:HAS_inst[0]|or0      ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[0]|xor0     ; |CounterWithParallelLoad|HAS:HAS_inst[0]|xor0     ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |CounterWithParallelLoad|En                       ; |CounterWithParallelLoad|En                       ; out              ;
+; |CounterWithParallelLoad|D                        ; |CounterWithParallelLoad|D                        ; out              ;
+; |CounterWithParallelLoad|value[3]                 ; |CounterWithParallelLoad|value[3]                 ; out              ;
+; |CounterWithParallelLoad|value[4]                 ; |CounterWithParallelLoad|value[4]                 ; out              ;
+; |CounterWithParallelLoad|value[5]                 ; |CounterWithParallelLoad|value[5]                 ; out              ;
+; |CounterWithParallelLoad|value[6]                 ; |CounterWithParallelLoad|value[6]                 ; out              ;
+; |CounterWithParallelLoad|value[7]                 ; |CounterWithParallelLoad|value[7]                 ; out              ;
+; |CounterWithParallelLoad|value[8]                 ; |CounterWithParallelLoad|value[8]                 ; out              ;
+; |CounterWithParallelLoad|value[9]                 ; |CounterWithParallelLoad|value[9]                 ; out              ;
+; |CounterWithParallelLoad|value[10]                ; |CounterWithParallelLoad|value[10]                ; out              ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[10]|and1 ; |CounterWithParallelLoad|mux2_1:mux_inst[10]|and1 ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[9]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[9]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[8]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[8]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[7]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[7]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[6]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[6]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[5]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[5]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[4]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[4]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[3]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[3]|and1  ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[9]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[9]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[8]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[8]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[7]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[7]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[6]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[6]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[5]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[5]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[4]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[4]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[3]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[3]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[2]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[2]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[1]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[1]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[0]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[0]|and1     ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |CounterWithParallelLoad|En                       ; |CounterWithParallelLoad|En                       ; out              ;
+; |CounterWithParallelLoad|D                        ; |CounterWithParallelLoad|D                        ; out              ;
+; |CounterWithParallelLoad|value[3]                 ; |CounterWithParallelLoad|value[3]                 ; out              ;
+; |CounterWithParallelLoad|value[4]                 ; |CounterWithParallelLoad|value[4]                 ; out              ;
+; |CounterWithParallelLoad|value[5]                 ; |CounterWithParallelLoad|value[5]                 ; out              ;
+; |CounterWithParallelLoad|value[6]                 ; |CounterWithParallelLoad|value[6]                 ; out              ;
+; |CounterWithParallelLoad|value[7]                 ; |CounterWithParallelLoad|value[7]                 ; out              ;
+; |CounterWithParallelLoad|value[8]                 ; |CounterWithParallelLoad|value[8]                 ; out              ;
+; |CounterWithParallelLoad|value[9]                 ; |CounterWithParallelLoad|value[9]                 ; out              ;
+; |CounterWithParallelLoad|value[10]                ; |CounterWithParallelLoad|value[10]                ; out              ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[10]|and1 ; |CounterWithParallelLoad|mux2_1:mux_inst[10]|and1 ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[9]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[9]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[8]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[8]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[7]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[7]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[6]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[6]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[5]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[5]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[4]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[4]|and1  ; out0             ;
+; |CounterWithParallelLoad|mux2_1:mux_inst[3]|and1  ; |CounterWithParallelLoad|mux2_1:mux_inst[3]|and1  ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[9]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[9]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[8]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[8]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[7]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[7]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[6]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[6]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[5]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[5]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[4]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[4]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[3]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[3]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[2]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[2]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[1]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[1]|and1     ; out0             ;
+; |CounterWithParallelLoad|HAS:HAS_inst[0]|and1     ; |CounterWithParallelLoad|HAS:HAS_inst[0]|and1     ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Nov 23 16:04:08 2020
+Info: Command: quartus_sim --simulation_results_format=VWF CounterWithParallelLoad -c CounterWithParallelLoad
+Info (324025): Using vector source file "E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad_Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      83.13 %
+Info (328052): Number of transitions in simulation is 3355
+Info (324045): Vector file CounterWithParallelLoad.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4449 megabytes
+    Info: Processing ended: Mon Nov 23 16:04:09 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,43 @@
+module SRwPL(OUT, clk, IN, sel);
+	parameter N = 4;
+	parameter gnd = 1'b0;
+	//parameter vcc = 1'b1;
+	input clk;
+	input [1:0] sel;
+	input [N-1;0] IN;
+	output [N-1;0] OUT;
+	
+	wire dff_o3, dff_o2, dff_o1, dff_o0, mux_o3, mux_o2, mux_o1, mux_o0;
+	
+	D_ff D[N-1:0]( .Qout[N-1:0](dff_o[N-1:0]), 
+						.clk(clk), 
+						.Din[N-1:0](mux_o[N-1:0])
+					);
+	
+	mux4_1 mux[N-1:0](.mux_out[N-1:0](mux_o[N-1:0]), 
+							.sel(sel), 
+							.I3[N-1:0]({gnd, dff_o[N-1:1]}), 
+							.I2[N-1:0]({dff_o[N-2:0], gnd}), 
+							.I1[N-1:0](IN[N-1:0]), 
+							.I0[N-1:0](dff_o[N-1:0])
+							);
+	
+	
+//	D_ff D3(.Qout(dff_o3), 
+//			  .clk(clk), 
+//			  .Din(mux_o3)
+//			);
+//	D_ff D2(.Qout(), 
+//			  .clk(), 
+//			  .Din()
+//			);
+//	D_ff D1(.Qout(), 
+//			  .clk(), 
+//			  .Din()
+//			);
+//	D_ff D0(.Qout(), 
+//			  .clk(), 
+//			  .Din()
+//			);
+
+endmodule 

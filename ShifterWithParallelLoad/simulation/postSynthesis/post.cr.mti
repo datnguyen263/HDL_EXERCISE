@@ -1,0 +1,15 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/simulation/postSynthesis/SRwPL_tb.v {1 {vlog -work work {E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\ShifterWithParallelLoad\simulation\postSynthesis\SRwPL_tb.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRwPL_tb
+
+Top level modules:
+	SRwPL_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/simulation/postSynthesis/ShifterWithParallelLoad.vo {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/simulation/postSynthesis/ShifterWithParallelLoad.vo
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRwPL
+
+Top level modules:
+	SRwPL
+
+} {} {}}

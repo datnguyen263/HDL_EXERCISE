@@ -1,0 +1,11 @@
+1. word.v
+	parameter N = 7;
+	//bufif1(out, in, ctrl)
+	bufif1 bf[N:0](out, dl_out, cs); 	//Error
+
+	bufif1 bf[7:0](out, dl_out, cs);	//No error
+2. 
+	vsim -view vsim.wlf
+ 	view wave
+	do wave.do	//doesn't work
+2. How to use parameter in this RAM?

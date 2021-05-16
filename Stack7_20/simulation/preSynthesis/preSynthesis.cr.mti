@@ -1,0 +1,57 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/simulation/preSynthesis/Stack7_20_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/simulation/preSynthesis/Stack7_20_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Stack7_20_tb
+
+Top level modules:
+	Stack7_20_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff
+
+Top level modules:
+	D_ff
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module HAS
+
+Top level modules:
+	HAS
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module CounterWithParallelLoad
+
+Top level modules:
+	CounterWithParallelLoad
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/SRwPL_stack.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/SRwPL_stack.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRwPL_stack
+
+Top level modules:
+	SRwPL_stack
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4_1
+
+Top level modules:
+	mux4_1
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/Stack7_20.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Stack7_20/Stack7_20.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Stack7_20
+
+Top level modules:
+	Stack7_20
+
+} {} {}}

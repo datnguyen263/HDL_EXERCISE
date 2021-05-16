@@ -1,0 +1,29 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/D_ff.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module D_ff
+
+Top level modules:
+	D_ff
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/ModelSimSimulation/SRwPL_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/ModelSimSimulation/SRwPL_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRwPL_tb
+
+Top level modules:
+	SRwPL_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/SRwPL.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/SRwPL.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRwPL
+
+Top level modules:
+	SRwPL
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/ShifterWithParallelLoad/mux4_1.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4_1
+
+Top level modules:
+	mux4_1
+
+} {} {}}

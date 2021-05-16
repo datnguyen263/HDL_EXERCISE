@@ -1,0 +1,12 @@
+module Stack7_20(OUT, Empty, Full, IN, clk, PushPop, En, Reset);
+	parameter N = 7;
+	input clk, PushPop, En, Reset;
+	input [N:0] IN;
+	output Empty, Full;
+	output [N:0] OUT;
+	
+	//SRwPL(OUT, clk, IN, sel);    
+	
+	
+	//CounterWithParallelLoad(OUT, clk, load, En, D, value);
+	

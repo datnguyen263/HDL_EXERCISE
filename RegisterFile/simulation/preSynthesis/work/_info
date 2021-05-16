@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vD_ff
+Z1 !s100 ^8fcBi5jcI?_;eW^ooH0?0
+Z2 IGHe8RQD_kZ=iifI8Mgd=@0
+Z3 VOV@KHcKWMELh=6DYzL52S2
+Z4 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\RegisterFile\simulation\preSynthesis
+Z5 w1603123782
+Z6 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/D_ff.v
+Z7 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/D_ff.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/D_ff.v|
+Z10 o-work work -O0
+Z11 n@d_ff
+Z12 !s108 1603261813.092000
+Z13 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/D_ff.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder2to4
+Z14 !s100 nHOHelzemF?2W2nMIB4MW1
+Z15 I1]XB[KzbU>6mEW_l4S;z?0
+Z16 VKhG?9zTFo@zTYX3TJ5AL20
+R4
+Z17 w1603123815
+Z18 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/decoder5to32.v
+Z19 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/decoder5to32.v
+L0 1
+R8
+r1
+31
+Z20 !s108 1603261814.033000
+Z21 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/decoder5to32.v|
+Z22 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/decoder5to32.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder3to8
+Z23 !s100 GWN;NYDINih:W<dUmm72n1
+Z24 INN<@a<=gzZ`aO@9DPP_SV3
+Z25 VHe0[7K;^dd]AbBbba2fQl0
+R4
+R17
+R18
+R19
+L0 12
+R8
+r1
+31
+R20
+R21
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder5to32
+Z26 !s100 o9bkfIBQBZLUfAL9QA8Lc1
+Z27 I`177FS^F1fk2SA?=OK[i02
+Z28 V1DL^M]fJoM`ma;HV1T_?d3
+R4
+R17
+R18
+R19
+L0 27
+R8
+r1
+31
+R20
+R21
+R22
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vRegisterFile
+Z29 IAonRVS@1I`EJN`kQBJW7d3
+Z30 VNO5FLPjR:430i^]<YT`HL3
+R4
+Z31 w1603261571
+Z32 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFile.v
+Z33 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFile.v
+L0 5
+R8
+r1
+31
+Z34 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFile.v|
+R10
+Z35 n@register@file
+Z36 !s100 8geB<3n@oGzCLjRM^`N3=2
+Z37 !s108 1603261814.771000
+Z38 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegisterFile_tb
+!i10b 1
+Z39 !s100 CgNaYWWoHLkaXfZ3mBiOD3
+Z40 Ic`B64ODFn8[mgYH4K][hn0
+Z41 V35Z>CP@?nD>ZT[V5_TbLd0
+R4
+Z42 w1603124770
+Z43 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v
+Z44 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1603261815.767000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v|
+Z45 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/simulation/postSynthesis/RegisterFile_tb.v|
+!s101 -O0
+R10
+Z46 n@register@file_tb
+vRegisterFileCell
+Z47 !s100 Z>J:gVDIMTFH03bH[fco72
+Z48 IE7QMMQ`=QoT81o5ZNK;C;0
+Z49 VD6KF=_CLF8:faF`NbCSEM0
+R4
+Z50 w1603123861
+Z51 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFileCell.v
+Z52 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFileCell.v
+L0 5
+R8
+r1
+31
+Z53 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFileCell.v|
+R10
+Z54 n@register@file@cell
+Z55 !s108 1603261815.148000
+Z56 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/RegisterFileCell.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vword
+Z57 !s100 W75imd@7]ooM3c`DKjGRZ1
+Z58 I89aKd1_@0RLO7ThiBHX>B0
+Z59 V0haY5mDZM_HzD`7;KiXTm1
+R4
+Z60 w1603123883
+Z61 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/word.v
+Z62 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/word.v
+L0 2
+R8
+r1
+31
+Z63 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/word.v|
+R10
+!i10b 1
+!s85 0
+Z64 !s108 1603261815.422000
+Z65 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/RegisterFile/word.v|
+!s101 -O0

@@ -1,0 +1,15 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Queue7_24_tb
+
+Top level modules:
+	Queue7_24_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24.vo {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/postSynthesis/Queue7_24.vo
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Queue7_24
+
+Top level modules:
+	Queue7_24
+
+} {} {}}

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1
+vSRAM
+Z1 !s100 STJPCAY9_Z7m0RbmkjEnW2
+Z2 IKF4XPV7[=hlng1;8SPB521
+Z3 V?mC4nR0]f0Oc<OGV;f;193
+Z4 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\SRAM\simulation\postSynthesis
+Z5 w1603186884
+Z6 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM.vo
+Z7 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM.vo|
+Z10 o-work work -O0
+Z11 n@s@r@a@m
+!i10b 1
+!s85 0
+Z12 !s108 1604460020.406000
+Z13 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM.vo|
+!s101 -O0
+vSRAM_tb
+!i10b 1
+!s100 YAQYIjn28kh1X=kL<iJ[h1
+IW818a7MhJae<DaQk=iOAE1
+Z14 VYiHVVUgSMPLilB1BUBN3J2
+R4
+w1604460016
+8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM_tb.v
+FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM_tb.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1604460022.307000
+!s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM_tb.v|
+!s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM_tb.v|
+!s101 -O0
+R10
+Z15 n@s@r@a@m_tb

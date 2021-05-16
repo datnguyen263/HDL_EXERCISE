@@ -1,0 +1,141 @@
+Flow report for ShifterWithParallelLoad
+Wed Sep 30 13:31:57 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. EDA Netlist Writer Summary
+  2. Legal Notice
+  3. Flow Summary
+  4. Flow Settings
+  5. Flow Non-Default Global Settings
+  6. Flow Elapsed Time
+  7. Flow OS Summary
+  8. Flow Log
+  9. Flow Messages
+ 10. Flow Suppressed Messages
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Wed Sep 30 13:31:57 2020 ;
+; Revision Name             ; ShifterWithParallelLoad               ;
+; Top-level Entity Name     ; SRwPL                                 ;
+; Family                    ; Cyclone II                            ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Wed Sep 30 13:31:57 2020           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; ShifterWithParallelLoad                         ;
+; Top-level Entity Name              ; SRwPL                                           ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 40 / 33,216 ( < 1 % )                           ;
+;     Total combinational functions  ; 40 / 33,216 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 19 / 475 ( 4 % )                                ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
++------------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------+
+; Flow Settings                               ;
++-------------------+-------------------------+
+; Option            ; Setting                 ;
++-------------------+-------------------------+
+; Start date & time ; 09/30/2020 13:31:24     ;
+; Main task         ; Compilation             ;
+; Revision Name     ; ShifterWithParallelLoad ;
++-------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                            ;
++---------------------------------------------------+--------------------------------+-------------------------+-------------+----------------+
+; Assignment Name                                   ; Value                          ; Default Value           ; Entity Name ; Section Id     ;
++---------------------------------------------------+--------------------------------+-------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                             ; 92668497485900.160144748413420 ; --                      ; --          ; --             ;
+; EDA_GENERATE_GATE_LEVEL_SIMULATION_COMMAND_SCRIPT ; On                             ; --                      ; --          ; eda_simulation ;
+; EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT        ; On                             ; --                      ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT                            ; Verilog Hdl                    ; --                      ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                               ; ModelSim-Altera (Verilog)      ; <None>                  ; --          ; --             ;
+; EDA_TIME_SCALE                                    ; 1 ps                           ; --                      ; --          ; eda_simulation ;
+; PARTITION_COLOR                                   ; 16764057                       ; --                      ; SRwPL       ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL               ; PLACEMENT_AND_ROUTING          ; --                      ; SRwPL       ; Top            ;
+; PARTITION_NETLIST_TYPE                            ; SOURCE                         ; --                      ; SRwPL       ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY                          ; output_files                   ; --                      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                                  ; SRwPL                          ; ShifterWithParallelLoad ; --          ; --             ;
++---------------------------------------------------+--------------------------------+-------------------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4586 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 4887 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4569 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4544 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4542 MB             ; 00:00:04                           ;
+; Total                     ; 00:00:26     ; --                      ; --                  ; 00:00:19                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-2D3BROS  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-2D3BROS  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-2D3BROS  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-2D3BROS  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2D3BROS  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off ShifterWithParallelLoad -c ShifterWithParallelLoad
+quartus_fit --read_settings_files=off --write_settings_files=off ShifterWithParallelLoad -c ShifterWithParallelLoad
+quartus_asm --read_settings_files=off --write_settings_files=off ShifterWithParallelLoad -c ShifterWithParallelLoad
+quartus_sta ShifterWithParallelLoad -c ShifterWithParallelLoad
+quartus_eda --read_settings_files=off --write_settings_files=off ShifterWithParallelLoad -c ShifterWithParallelLoad
+
+
+

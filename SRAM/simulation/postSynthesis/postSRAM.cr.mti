@@ -1,0 +1,15 @@
+E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM_tb.v {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM_tb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM_tb
+
+Top level modules:
+	SRAM_tb
+
+} {} {}} E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM.vo {1 {vlog -work work E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/SRAM/simulation/postSynthesis/SRAM.vo
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM
+
+} {} {}}
