@@ -4,42 +4,42 @@ K3
 cModel Technology
 Z0 dC:\altera\13.0sp1
 vCounterWithParallelLoad
-Z1 !s100 ahnELNahGO<;WzdPW8l=E0
-Z2 IgM@N_[h:Bh6LkdFSPLkM73
-Z3 VACLILoDJ_j^EGU2B<;SL?3
-Z4 dE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis
-Z5 w1604464818
-Z6 8E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo
-Z7 FE:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo
+Z1 IVc69<e0>`F5hIh2aIngVX0
+Z2 VACLILoDJ_j^EGU2B<;SL?3
+Z3 dC:\Users\DN\Desktop\HDL_EXERCISE\CounterWithParallelLoad\simulation\postSynthesis
+Z4 w1621129654
+Z5 8C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo
+Z6 FC:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -reportprogress|300|-work|work|E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo|
-Z10 o-work work -O0
-Z11 n@counter@with@parallel@load
+Z8 o-work work -O0
+Z9 n@counter@with@parallel@load
 !i10b 1
+Z10 !s100 bLn?o>;dB72`6>XO`WLCa3
 !s85 0
-Z12 !s108 1604466448.804000
-Z13 !s107 E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo|
+Z11 !s108 1621129945.060000
+Z12 !s107 C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo|
+Z13 !s90 -reportprogress|300|-work|work|C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad.vo|
 !s101 -O0
 vCounterWithParallelLoad_tb
 !i10b 1
-!s100 >N[VMT1hR0IH:nQVl3ezo0
-IKd@c[`nZgWbB6mW?Ka8UE3
+!s100 :Nj<oJU@nX5D5^l0mdY5@0
+INKI2`C6VYW>fkn8l^>^[^0
 Z14 VBb_?dIz]jc[z1M5SDFlKN1
+R3
 R4
-w1604466443
-Z15 8E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v
-Z16 FE:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v
+8C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad_tb.v
+FC:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad_tb.v
 L0 2
-R8
+R7
 r1
 !s85 0
 31
-!s108 1604466449.153000
-!s107 E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v|
-Z17 !s90 -reportprogress|300|-work|work|E:\TAILIEUHOCTAP\VerilogHDL\BaiTap\CounterWithParallelLoad\simulation\postSynthesis\CounterWithParallelLoad_tb.v|
+!s108 1621129945.202000
+!s107 C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad_tb.v|
+!s90 -reportprogress|300|-work|work|C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/simulation/postSynthesis/CounterWithParallelLoad_tb.v|
 !s101 -O0
-R10
-Z18 n@counter@with@parallel@load_tb
+R8
+Z15 n@counter@with@parallel@load_tb

@@ -1,0 +1,333 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\modelsim_ase\win32aloem
+vcounter
+Z1 !s100 4n<=I364e;jWo`_`1=X0h0
+Z2 ISC@42OSbKT6DLdZ774gSR0
+Z3 Vc_;TBI`9]I_`dA>ZaN^O63
+Z4 dD:\Study\CE213\Exercises\PushdownStack
+Z5 w1602511292
+Z6 8D:/Study/CE213/Exercises/PushdownStack/counter.v
+Z7 FD:/Study/CE213/Exercises/PushdownStack/counter.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/counter.v|
+Z10 o-work work -O0
+Z11 !s108 1602665574.378000
+Z12 !s107 D:/Study/CE213/Exercises/PushdownStack/counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vd_flipflop
+Z13 !s100 KD5LmRdR>3]BJBCM1RbI30
+Z14 IlIG:XUloB;gh`VX3`G:AP3
+Z15 V18z3YAXeQ[Od>PJfPBREY0
+R4
+Z16 w1602390225
+Z17 8D:/Study/CE213/Exercises/PushdownStack/d_flipflop.v
+Z18 FD:/Study/CE213/Exercises/PushdownStack/d_flipflop.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/d_flipflop.v|
+R10
+Z20 !s108 1602665574.473000
+Z21 !s107 D:/Study/CE213/Exercises/PushdownStack/d_flipflop.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vd_latch
+Z22 !s100 G4U`c:M4m1^dC00m]e5T12
+Z23 IKfaOI<GXni0EX[_g;`1[F1
+Z24 VeScVAY3H5EZW_]WU7XYN70
+R4
+Z25 w1601901357
+Z26 8D:/Study/CE213/Exercises/PushdownStack/d_latch.v
+Z27 FD:/Study/CE213/Exercises/PushdownStack/d_latch.v
+L0 1
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/d_latch.v|
+R10
+Z29 !s108 1602665574.580000
+Z30 !s107 D:/Study/CE213/Exercises/PushdownStack/d_latch.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder10to1024
+Z31 !s100 V_Wneo:^@QGHBCKbNHQEi2
+Z32 IZM@YhleeXC7TIe6:i=hi]3
+Z33 VF<WSibYTM>JGT7bWB8QTk2
+R4
+Z34 w1601973026
+Z35 8D:/Study/CE213/Exercises/PushdownStack/decoder10to1024.v
+Z36 FD:/Study/CE213/Exercises/PushdownStack/decoder10to1024.v
+L0 1
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/decoder10to1024.v|
+R10
+Z38 !s108 1602665575.043000
+Z39 !s107 D:/Study/CE213/Exercises/PushdownStack/decoder10to1024.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder3to8
+Z40 !s100 Y]FX>YHggRdo=m<LbChSb0
+Z41 I=dl2M_EWIY_O3UJe36BEh3
+Z42 Vd4Xf@C;zYEn7EU`aP4B;N0
+R4
+Z43 w1601906509
+Z44 8D:/Study/CE213/Exercises/PushdownStack/decoder3to8.v
+Z45 FD:/Study/CE213/Exercises/PushdownStack/decoder3to8.v
+L0 1
+R8
+r1
+31
+Z46 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/decoder3to8.v|
+R10
+Z47 !s108 1602665574.706000
+Z48 !s107 D:/Study/CE213/Exercises/PushdownStack/decoder3to8.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder4to16
+Z49 !s100 JzVWOI5g_Z>h0_S^[9;`S2
+Z50 IS=VHhh79a<aZ9`DaP:QU=3
+Z51 Vb5Xk6L7AZh_j2lDfD>nW02
+R4
+Z52 w1601971976
+Z53 8D:/Study/CE213/Exercises/PushdownStack/decoder4to16.v
+Z54 FD:/Study/CE213/Exercises/PushdownStack/decoder4to16.v
+L0 1
+R8
+r1
+31
+Z55 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/decoder4to16.v|
+R10
+Z56 !s108 1602665574.805000
+Z57 !s107 D:/Study/CE213/Exercises/PushdownStack/decoder4to16.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder5to32
+Z58 !s100 39SQ14GeHlgEaFk;]l88O3
+Z59 Io8K8UHD>IA3o99doI_0?A0
+Z60 VUoP<];O2kE`]J0YO]D:HT3
+R4
+Z61 w1601972137
+Z62 8D:/Study/CE213/Exercises/PushdownStack/decoder5to32.v
+Z63 FD:/Study/CE213/Exercises/PushdownStack/decoder5to32.v
+L0 1
+R8
+r1
+31
+Z64 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/decoder5to32.v|
+R10
+Z65 !s108 1602665574.934000
+Z66 !s107 D:/Study/CE213/Exercises/PushdownStack/decoder5to32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdff_setrst
+Z67 !s100 T2FHjFiJKn2[gba9@L0ZN1
+Z68 Innmg_[2j@9PZkdbf2GPRD3
+Z69 VZXj2AH>dI]IDQF<_zJ1=;2
+R4
+Z70 w1602390669
+Z71 8D:/Study/CE213/Exercises/PushdownStack/dff_setrst.v
+Z72 FD:/Study/CE213/Exercises/PushdownStack/dff_setrst.v
+L0 1
+R8
+r1
+31
+Z73 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/dff_setrst.v|
+R10
+Z74 !s108 1602665575.138000
+Z75 !s107 D:/Study/CE213/Exercises/PushdownStack/dff_setrst.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vHAS
+Z76 !s100 0[F@BRY4f<SMWc91>DF@R3
+Z77 IMW?5SgG_5OKRoiFea^=>h2
+Z78 V9>BiigB6R`@K`aShkR0_:1
+R4
+Z79 w1602510945
+Z80 8D:/Study/CE213/Exercises/PushdownStack/HAS.v
+Z81 FD:/Study/CE213/Exercises/PushdownStack/HAS.v
+L0 1
+R8
+r1
+31
+Z82 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/HAS.v|
+R10
+Z83 n@h@a@s
+Z84 !s108 1602665575.241000
+Z85 !s107 D:/Study/CE213/Exercises/PushdownStack/HAS.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vm21
+Z86 !s100 KCUzF5^haWFbNGiAmE<7F2
+Z87 I=CO`NBXg6DOb<Cnz:?[LT0
+Z88 V7LEK38Kj^?DkCTJl?C6XI3
+R4
+Z89 w1602386299
+Z90 8D:/Study/CE213/Exercises/PushdownStack/m21.v
+Z91 FD:/Study/CE213/Exercises/PushdownStack/m21.v
+L0 1
+R8
+r1
+31
+Z92 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/m21.v|
+R10
+Z93 !s108 1602665575.355000
+Z94 !s107 D:/Study/CE213/Exercises/PushdownStack/m21.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vm21_10bit
+Z95 !s100 S1SIMLaQDM?Job^Ac^iC@3
+Z96 IWnIf]2J>H0FA3OeV[?DoB2
+Z97 VfgRV^]gNgg:Lfb5f9[j8^3
+R4
+Z98 w1602386464
+Z99 8D:/Study/CE213/Exercises/PushdownStack/m21_10bit.v
+Z100 FD:/Study/CE213/Exercises/PushdownStack/m21_10bit.v
+L0 1
+R8
+r1
+31
+Z101 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/m21_10bit.v|
+R10
+Z102 !s108 1602665575.455000
+Z103 !s107 D:/Study/CE213/Exercises/PushdownStack/m21_10bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmc8bit
+Z104 !s100 `TTf3N7V]_Zjnk1A=W7d_1
+Z105 IF3`j7l@mik16FVU?SS8811
+Z106 VM?>17@f?O8jS;JH:[Abe^0
+R4
+Z107 w1601947846
+Z108 8D:/Study/CE213/Exercises/PushdownStack/mc8bit.v
+Z109 FD:/Study/CE213/Exercises/PushdownStack/mc8bit.v
+L0 1
+R8
+r1
+31
+Z110 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/mc8bit.v|
+R10
+Z111 !s108 1602665575.568000
+Z112 !s107 D:/Study/CE213/Exercises/PushdownStack/mc8bit.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMemoryCell
+Z113 !s100 kA1NX_KUjLK@:WA:;M1SK1
+Z114 IbXUD>ZF71c>5FN;@o9l8d0
+Z115 VIgEX?<00RBFgE]KzLTFSj3
+R4
+Z116 w1601947779
+Z117 8D:/Study/CE213/Exercises/PushdownStack/MemoryCell.v
+Z118 FD:/Study/CE213/Exercises/PushdownStack/MemoryCell.v
+L0 1
+R8
+r1
+31
+Z119 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/MemoryCell.v|
+R10
+Z120 n@memory@cell
+Z121 !s108 1602665575.661000
+Z122 !s107 D:/Study/CE213/Exercises/PushdownStack/MemoryCell.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPushdownStack
+!i10b 1
+!s100 ]9AW=a1hA8[EP6Z_[ek@C1
+IE>@299Yg=W[WC5]n90LLg0
+Z123 V3cSNcNOEH^d[Fb3`DRMZD0
+Z124 dC:\Users\DN\Desktop\PushdownStack
+w1605007686
+8C:/Users/DN/Desktop/PushdownStack/simulation/modelsim/PushdownStack.vo
+FC:/Users/DN/Desktop/PushdownStack/simulation/modelsim/PushdownStack.vo
+L0 31
+R8
+r1
+!s85 0
+31
+!s108 1621141657.907000
+!s107 C:/Users/DN/Desktop/PushdownStack/simulation/modelsim/PushdownStack.vo|
+!s90 -reportprogress|300|-work|work|C:/Users/DN/Desktop/PushdownStack/simulation/modelsim/PushdownStack.vo|
+!s101 -O0
+R10
+Z125 n@pushdown@stack
+vRAM
+Z126 !s100 g?P@;PgDL12agFW>Cjji11
+Z127 IRD0Iee0ICKFFgZoSinmXW2
+Z128 VYAZR]^3e:U94a;k7H4F6H0
+R4
+Z129 w1601978377
+Z130 8D:/Study/CE213/Exercises/PushdownStack/RAM.v
+Z131 FD:/Study/CE213/Exercises/PushdownStack/RAM.v
+L0 1
+R8
+r1
+31
+Z132 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/RAM.v|
+R10
+Z133 n@r@a@m
+Z134 !s108 1602665575.893000
+Z135 !s107 D:/Study/CE213/Exercises/PushdownStack/RAM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsr_latch_gated
+Z136 !s100 8`dS66oNMYk7e]ijKH_To0
+Z137 IULd6gM>dam1WMAZUKLAjM0
+Z138 VOX`Th;8Z2NULW^BS`RJae3
+R4
+Z139 w1602388649
+Z140 8D:/Study/CE213/Exercises/PushdownStack/sr_latch_gated.v
+Z141 FD:/Study/CE213/Exercises/PushdownStack/sr_latch_gated.v
+L0 1
+R8
+r1
+31
+Z142 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/sr_latch_gated.v|
+R10
+Z143 !s108 1602665575.994000
+Z144 !s107 D:/Study/CE213/Exercises/PushdownStack/sr_latch_gated.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTestbench
+Z145 I5OVH5IPAj@8obe<NZ8PcB3
+Z146 VGdUiEZgaMiVEi@bgHJeE13
+R124
+Z147 w1605007578
+Z148 8C:/Users/DN/Desktop/PushdownStack/Testbench.v
+Z149 FC:/Users/DN/Desktop/PushdownStack/Testbench.v
+L0 2
+R8
+r1
+31
+R10
+Z150 n@testbench
+!i10b 1
+Z151 !s100 nOKPdWWKdM;I0IYEHWXP31
+!s85 0
+Z152 !s108 1621141657.823000
+Z153 !s107 C:/Users/DN/Desktop/PushdownStack/Testbench.v|
+Z154 !s90 -reportprogress|300|-work|work|C:/Users/DN/Desktop/PushdownStack/Testbench.v|
+!s101 -O0

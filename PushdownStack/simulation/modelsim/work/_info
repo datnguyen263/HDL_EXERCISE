@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\modelsim_ase\win32aloem
+vPushdownStack
+Z1 !s100 zDJNSZ@=8C[Y<mmgg8Plb2
+Z2 IjO@j:FO3GD?:2_Fldgaz23
+Z3 V3cSNcNOEH^d[Fb3`DRMZD0
+Z4 dD:\Study\CE213\Exercises\PushdownStack\simulation\modelsim
+Z5 w1603701725
+Z6 8D:/Study/CE213/Exercises/PushdownStack/simulation/modelsim/PushdownStack.vo
+Z7 FD:/Study/CE213/Exercises/PushdownStack/simulation/modelsim/PushdownStack.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/simulation/modelsim/PushdownStack.vo|
+Z10 o-work work -O0
+Z11 n@pushdown@stack
+!i10b 1
+!s85 0
+Z12 !s108 1604455117.518000
+Z13 !s107 D:/Study/CE213/Exercises/PushdownStack/simulation/modelsim/PushdownStack.vo|
+!s101 -O0
+vTestbench
+!i10b 1
+Z14 !s100 C8MaeGVF1D3Gi8kOL[WPZ1
+Z15 I6XEE27NB>JfZKKo`f<Q>_1
+Z16 VGdUiEZgaMiVEi@bgHJeE13
+R4
+Z17 w1602659809
+Z18 8D:/Study/CE213/Exercises/PushdownStack/Testbench.v
+Z19 FD:/Study/CE213/Exercises/PushdownStack/Testbench.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1604455118.860000
+!s107 D:/Study/CE213/Exercises/PushdownStack/Testbench.v|
+Z20 !s90 -reportprogress|300|-work|work|D:/Study/CE213/Exercises/PushdownStack/Testbench.v|
+!s101 -O0
+R10
+Z21 n@testbench

@@ -1,0 +1,7 @@
+module counter(out,in,D,E,SET,RST,CLK);
+	output [9:0]out;
+	input [9:0]in;
+	input D,E,SET,RST,CLK;
+	HAS ha[9:0](.Cout(Cout),.Dout(Dout),.Cin(Cout[8:0]),.Qin(Q),.Qin_NOT(Qn),.Din(D),.Din_NOT(~D));
+	dff_setrst dff[9:0](.Q(Q),.Qn(Qn),.D(Dout),.SET(SET),.RST(RST),.CLK(CLK));
+endmodule

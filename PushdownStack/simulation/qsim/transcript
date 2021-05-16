@@ -1,0 +1,59 @@
+# do PushdownStack.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PushdownStack
+# 
+# Top level modules:
+# 	PushdownStack
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PushdownStack_vlg_sample_tst
+# -- Compiling module PushdownStack_vlg_check_tst
+# -- Compiling module PushdownStack_vlg_vec_tst
+# 
+# Top level modules:
+# 	PushdownStack_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.PushdownStack_vlg_vec_tst 
+# Loading work.PushdownStack_vlg_vec_tst
+# Loading work.PushdownStack
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_clkctrl
+# Loading cycloneii_ver.cycloneii_mux41
+# Loading cycloneii_ver.cycloneii_ena_reg
+# Loading work.PushdownStack_vlg_sample_tst
+# Loading work.PushdownStack_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# ERROR! Vector Mismatch for output port O[0] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[1] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[4] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+# ERROR! Vector Mismatch for output port O[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = zzzzzzzz
+#           8 mismatched vectors : Simulation failed !
+# ** Note: $finish    : PushdownStack.vt(345)
+#    Time: 100 us  Iteration: 0  Instance: /PushdownStack_vlg_vec_tst/tb_out

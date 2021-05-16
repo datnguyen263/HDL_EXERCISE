@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Queue7_24
-Wed Oct 28 10:45:57 2020
+Sat May 15 19:27:37 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Oct 28 10:45:57 2020 ;
+; EDA Netlist Writer Status ; Successful - Sat May 15 19:27:37 2021 ;
 ; Revision Name             ; Queue7_24                             ;
 ; Top-level Entity Name     ; Queue7_24                             ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                            ;
-+---------------------------------------------------------------------------------------+
-; Generated Files                                                                       ;
-+---------------------------------------------------------------------------------------+
-; E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/modelsim/Queue7_24.vo         ;
-; E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/modelsim/Queue7_24_fast.vo    ;
-; E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/modelsim/Queue7_24_v.sdo      ;
-; E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/modelsim/Queue7_24_v_fast.sdo ;
-+---------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                          ;
++-------------------------------------------------------------------------------------+
+; Generated Files                                                                     ;
++-------------------------------------------------------------------------------------+
+; C:/Users/DN/Desktop/HDL_EXERCISE/Queue7_24/simulation/modelsim/Queue7_24.vo         ;
+; C:/Users/DN/Desktop/HDL_EXERCISE/Queue7_24/simulation/modelsim/Queue7_24_fast.vo    ;
+; C:/Users/DN/Desktop/HDL_EXERCISE/Queue7_24/simulation/modelsim/Queue7_24_v.sdo      ;
+; C:/Users/DN/Desktop/HDL_EXERCISE/Queue7_24/simulation/modelsim/Queue7_24_v_fast.sdo ;
++-------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 28 10:45:48 2020
+    Info: Processing started: Sat May 15 19:27:30 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Queue7_24 -c Queue7_24
-Info (204026): Generated files "Queue7_24.vo", "Queue7_24_fast.vo", "Queue7_24_v.sdo" and "Queue7_24_v_fast.sdo" in directory "E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/Queue7_24/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "Queue7_24.vo", "Queue7_24_fast.vo", "Queue7_24_v.sdo" and "Queue7_24_v_fast.sdo" in directory "C:/Users/DN/Desktop/HDL_EXERCISE/Queue7_24/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4715 megabytes
-    Info: Processing ended: Wed Oct 28 10:45:58 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 4728 megabytes
+    Info: Processing ended: Sat May 15 19:27:37 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 

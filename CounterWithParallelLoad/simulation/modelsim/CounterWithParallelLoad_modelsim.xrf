@@ -1,9 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/mux2_1.v
-source_file = 1, E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/HAS.v
-source_file = 1, E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/CounterWithParallelLoad.v
-source_file = 1, E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/D_ff.v
-source_file = 1, E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/db/CounterWithParallelLoad.cbx.xml
+source_file = 1, C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/mux2_1.v
+source_file = 1, C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/HAS.v
+source_file = 1, C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/CounterWithParallelLoad.v
+source_file = 1, C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/D_ff.v
+source_file = 1, C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/CounterWithParallelLoad_Waveform.vwf
+source_file = 1, C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/db/CounterWithParallelLoad.cbx.xml
 design_name = CounterWithParallelLoad
 instance = comp, \D_ff_inst[0]|nand3~0 , D_ff_inst[0]|nand3~0, CounterWithParallelLoad, 1
 instance = comp, \D_ff_inst[5]|nand2 , D_ff_inst[5]|nand2, CounterWithParallelLoad, 1

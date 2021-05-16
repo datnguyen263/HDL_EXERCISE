@@ -1,5 +1,5 @@
 Fitter report for CounterWithParallelLoad
-Wed Nov 04 11:40:10 2020
+Sat May 15 19:26:05 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov 04 11:40:10 2020           ;
+; Fitter Status                      ; Successful - Sat May 15 19:26:05 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CounterWithParallelLoad                         ;
 ; Top-level Entity Name              ; CounterWithParallelLoad                         ;
@@ -135,7 +135,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 8      ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
@@ -178,7 +178,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/output_files/CounterWithParallelLoad.pin.
+The pin-out file can be found in C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/output_files/CounterWithParallelLoad.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1618,7 +1618,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.73 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.69 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 11 output pins without output pin load capacitance assignment
     Info (306007): Pin "OUT[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1637,17 +1637,17 @@ Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/output_files/CounterWithParallelLoad.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/output_files/CounterWithParallelLoad.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 80 warnings
-    Info: Peak virtual memory: 4885 megabytes
-    Info: Processing ended: Wed Nov 04 11:40:10 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Sat May 15 19:26:05 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in E:/TAILIEUHOCTAP/VerilogHDL/BaiTap/CounterWithParallelLoad/output_files/CounterWithParallelLoad.fit.smsg.
+The suppressed messages can be found in C:/Users/DN/Desktop/HDL_EXERCISE/CounterWithParallelLoad/output_files/CounterWithParallelLoad.fit.smsg.
 
 

@@ -1,0 +1,24 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/d_flipflop.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/MemoryCell.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/d_latch.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/decoder3to8.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/m21.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/sr_latch_gated.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/dff_setrst.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/HAS.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/PushdownStack.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/mc8bit.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/decoder4to16.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/m21_10bit.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/counter.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/RAM.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/decoder5to32.v}
+vlog -vlog01compat -work work +incdir+D:/Study/CE213/Exercises/PushdownStack {D:/Study/CE213/Exercises/PushdownStack/decoder10to1024.v}
+
